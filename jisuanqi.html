@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>        
+    <script>//显示屏
+    function get(num){
+  var shownum=document.getElementById("display");
+  shownum.value=shownum.value+num;
+}
+//删掉最后一个数
+function delete1(){
+  var deletebutton=document.getElementById("delete");
+  var shownum=document.getElementById("display");
+  shownum.value=shownum.value.substring(0,shownum.value.length-1);
+}
+
+//清除全部
+function clear1(){
+var clearbutton=document.getElementById("clear");
+  var shownum=document.getElementById("display");
+  shownum.value="";  
+}
+
+//计算最后结果
+function cal1(){
+var denghaobutton=document.getElementById("cal");
+    var result=0;
+ result=document.getElementById("display").value;
+    document.getElementById("display").value=eval(result);
+}
+
+
+window.onload=function(){
+get(num);
+};
+
+window.onload=function(){
+delete1();
+};
+
+window.onload=function(){
+clear1();
+};
+
+window.onload=function(){
+cal1();
+};
+</script></head>
+    <style type="text/css">
+        h1{
+        text-align:center;
+            font-family:"Microsoft YaHei UI",Arial,"Times New Roman";
+            letter-spacing:10px;
+            color:#FF6699;
+            text-shadow:5px 5px 5px pink;
+        }
+        form{
+        width:260px;
+        height:410px;
+        background-color:#66CCFF;
+        border-radius:20px;
+        box-shadow:5px 5px 0px #66FFFF;
+        margin:30px auto;
+            padding-left:40px;
+            padding-top:30px;
+        }  
+        .com{
+            width:45px;
+            height:45px;
+            font-size:30px;
+            border-radius:20px;
+            color:white;
+            border:none;
+            margin-top:10px;
+            margin-right:10px;
+        }
+        .number{
+        background-color:pink;        
+        box-shadow:0px 5px 0px #FF6699;
+        }
+        .number:active{
+        box-shadow:0px 3px 0px #FF6699;
+        }
+        .operator1{
+        background-color:#FFFF99;
+        box-shadow:0px 5px 0px #FFCC00;
+        }
+        .operator1:active{
+        box-shadow:0px 3px 0px #FFCC00;
+        }
+        #display{
+        width:220px;
+        height:60px;
+        border-radius:20px;
+        box-shadow:inset 5px 5px #66CCCC;
+            text-align:right;
+            font-size:30px;
+            padding-right:10px;
+            margin-bottom:20px;
+            margin-top:15px;
+        }
+        .fuhao{
+        background-color:#CCCCCC;
+        box-shadow:0px 5px 0px #999999;
+        }
+        .fuhao:active{
+        box-shadow:0px 3px 0px #999999;
+        }
+        .dengyu{
+        width:162px;
+        height:45px;
+        border-radius:20px;
+        font-size:30px;
+            margin-right:12px;
+            margin-top:12px;
+            background-color:#FFCC99;
+            color:white;
+            border:none;
+            box-shadow:0px 5px 0px #FFCC33;
+        }
+        .dengyu:active{
+        box-shadow:0px 3px 0px #FFCC33;
+        }
+    </style>
+    <body>
+    <h1>小狗の计算器</h1>
+        <form>
+    <input type="text" id="display">
+        <br/>
+    <input type="button" value="7" class="com number" onclick="get(this.value);">
+    <input type="button" value="8" class="com number" onclick="get(this.value);">
+    <input type="button" value="9" class="com number" onclick="get(this.value);">
+    <input type="button" value="+" class="com fuhao" onclick="get(this.value);">
+        <br/>
+    <input type="button" value="4" class="com number" onclick="get(this.value);">
+    <input type="button" value="5" class="com number" onclick="get(this.value);">
+    <input type="button" value="6" class="com number" onclick="get(this.value);">
+    <input type="button" value="*" class="com fuhao" onclick="get(this.value);">
+        <br/>
+    <input type="button" value="1" class="com number" onclick="get(this.value);">
+    <input type="button" value="2" class="com number" onclick="get(this.value);">
+    <input type="button" value="3" class="com number" onclick="get(this.value);">
+    <input type="button" value="-" class="com fuhao" onclick="get(this.value);">
+        <br/>
+    <input type="button" value="0" class="com number" onclick="get(this.value);">
+    <input type="button" value="." class="com fuhao" onclick="get(this.value);">
+    <input type="button" value="/" class="com fuhao" onclick="get(this.value);">
+    <input type="button" value="C" class="com operator1" id="clear" onclick="clear1();">
+            <br/>
+    <input type="button" value="=" class="dengyu" id="cal" onclick="cal1();">
+
+    <input type="button" value="D" class="com operator1" id="delete" onclick="delete1();">
+            </form>
+
+            </body>
+</html>
