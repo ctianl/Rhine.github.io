@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                position:relative;
+                background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537684010707&di=54cd233f7dd9afe53a197aaeeb0110f8&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201601%2F26%2F20160126234252_TYRxU.thumb.700_0.jpeg');
+                
+             }
+            .main{
+                position:relative;
+                margin:30px auto;
+                width:1024px;
+                height:930px;
+               
+            }
+            .fanzao{
+                position:absolute;
+                width:1024px;
+                margin:0 auto;
+                height:308px; 
+                top:1680px;
+                background-color:white;
+                margin-bottom:40px;
+            }
+            .color_bigbox2{
+                width:330px;
+                height:690px;
+                top:900px;
+                position:absolute;
+                left:0;
+            }
+            .color11{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#CCCCFF;
+                opacity:0.7;
+            }
+            .color11:hover{
+            background-color:#FFCCFF	;
+            }
+            .color22{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#99FFCC	;
+                opacity:0.7;
+            }
+            .color22:hover{
+                background-color:#FFFFCC	;
+            }
+            .color33{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#FFCCFF;    
+                opacity:0.7;
+            }
+            .color33:hover{
+            background-color:#CC99CC	;
+            }
+            .color44{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#FFFFCC		;    
+                opacity:0.7;
+                position:absolute;
+                right:0;
+            }
+            .color44:hover{
+            background-color:#FFCCFF;
+            }
+            .color55{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#CCFFFF				;    
+                opacity:0.7;
+                position:absolute;
+                right:0;
+                top:480px;
+                         
+            }
+            .color55:hover{
+            background-color:#CCFFCC	;
+            }
+            .color66{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#FFCCFF				;    
+                opacity:0.7;
+                position:absolute;
+                right:0;
+                top:600px;           
+            }
+            .color66:hover{
+            background-color:#CCCCFF	;
+            }
+            /*分开*/
+            .color_bigbox{
+            width:330px;
+                height:680px;
+                top:220px;
+                right:0px;
+                position:absolute;
+            }
+            .color1{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#CCCCFF;
+                opacity:0.7;
+            }
+            .color1:hover{
+            background-color:#FFCCFF	;
+            }
+            .color2{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#99FFCC	;
+                opacity:0.7;
+            }
+            .color2:hover{
+                background-color:#FFFFCC	;
+            }
+            .color3{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#FFCCFF;    
+                opacity:0.7;
+            }
+            .color3:hover{
+            background-color:#CC99CC	;
+            }
+            .color4{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#FFFFCC		;    
+                opacity:0.7;
+                position:absolute;
+                right:0;
+            }
+            .color4:hover{
+            background-color:#FFCCFF;
+            }
+            .color5{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#CCFFFF				;    
+                opacity:0.7;
+                position:absolute;
+                right:0;
+                top:480px;
+                         
+            }
+            .color5:hover{
+            background-color:#CCFFCC	;
+            }
+            .color6{
+                width:120px;
+                height:120px;
+                transform:rotate(45deg);
+                border-radius:30px;
+                background-color:#FFCCFF				;    
+                opacity:0.7;
+                position:absolute;
+                right:0;
+                top:600px;           
+            }
+            .color6:hover{
+            background-color:#CCCCFF	;
+            }
+            .yao_picture{
+                position:absolute;
+                width:650px;
+                height:900px;
+                background-color:white;
+                top:0px;
+                left:0px;
+            }
+            .fucksong{
+                top:0px;         
+                position:absolute;
+                right:0px;
+                width:330px;
+                height:200px;
+                border:3px solid white;
+                background-color:white;
+            }
+            .jiyu{
+                position:absolute;
+                width:600px;
+                top:940px;
+                right:0px;
+                height:700px;
+                background-color:white;
+              
+            }
+              .top_picture{
+                  position:relative;
+                  width:1024px;
+                  height:700px;
+                  background-color:white;
+                  border-bottom:10px solid white;
+                  border-top:10px solid white;
+                  margin:0 auto;
+             }
+            .top_picture img{
+                position:absolute;
+                top:0;
+                width:70%;
+                left:20%;
+                height:700px;
+                left:15%;
+                
+            }
+            .top_picture .zhedang{
+                position:absolute;
+                width:280px;
+                height:180px;
+                background-color:white;
+                bottom:0;
+                left:720px;
+            }
+            .top_picture h1{
+                position:absolute;
+                top:440px;
+                left:65%;
+            }
+
+            .yao_picture img{
+            margin-top:30px;
+            margin-left:30px;    
+            width:50px;
+            height:50px;
+            }
+            .fucksong img{
+            margin-top:30px;
+            margin-left:30px;    
+            width:50px;
+            height:50px;            
+            }
+            /*这个class用于调整左右点击图片的框框的位置*/
+            .yao_box{
+                position:relative;
+            }
+            .left_box{
+                position:absolute;
+                width:40px;
+                height:120px;
+                background-color:#FFCCFF;
+                top:450px;
+                left:0px;
+            }
+            .right_box{
+                position:absolute;
+                width:40px;
+                height:120px;
+                background-color:#FFCCFF;
+                top:450px; 
+                right:0px;
+            }
+            .left_box:hover{
+                background-color:#CCCCFF;
+            }            
+            .right_box:hover{
+                background-color:#CCCCFF;
+            }
+            /*弄小箭头嘻嘻*/
+            .jiantou_box{
+                position:relative;
+            }
+            .xiaojiantou_left{
+                position:absolute;
+                width:12px;
+                height:12px;
+                border-top:2px solid white;
+                border-right:2px solid white;
+                transform:rotate(225deg);
+                top:55px;
+                left:12px;               
+            }
+            .xiaojiantou_right{
+                position:absolute;
+                width:12px;
+                height:12px;
+                border-top:2px solid white;
+                border-right:2px solid white;
+                transform:rotate(45deg);
+                top:55px;
+                left:12px;               
+            }
+            .yao_picture h3{
+                top:30px;
+                left:100px;
+                position:absolute;
+                color:#FF6666;
+            }
+
+            .picture_box{
+                position:absolute;
+                top:90px;
+                left:40px;
+                width:570px;
+                height:800px;
+                border:1px dotted white;
+                border-radius:50px;
+            }
+            .picture_box{
+            background-image:url('https://wx2.sinaimg.cn/mw690/0066mps3gy1fvje50yr4rj30qo0zk4fb.jpg');
+            background-repeat:no-repeat;
+                background-position:center center;
+            }
+            .fucksong_box{
+            position:relative;
+            }
+            .fucksong h3{
+                top:30px;
+                left:100px;
+                position:absolute;
+                color:#FF6666;
+            }
+            .fucksong audio{
+                position:absolute;
+                top:120px;
+                left:20px;
+            }
+            .jiyu_box{
+            position:relative;
+            }
+            
+            .wenben{
+            position:absolute;
+            width:460px;
+                height:540px;
+                background-color:white;
+                top:110px;
+                right:100px;
+                border:1px dotted #FF6666;
+                border-radius:50px;
+                padding:30px;
+                box-sizing:border-box;
+            }
+            .s{
+                text-indent:2em;
+                line-height:1.4em;
+                color:grey;
+            }
+            
+            .jiyu_box .first_p{
+            position:absolute;
+            margin-top:30px;
+            margin-left:30px;    
+            width:50px;
+            height:50px;
+            }
+
+            .jiyu h3{
+                top:30px;
+                left:100px;
+                position:absolute;
+                color:#FF6666;  
+            }
+            .lingxing1{
+                width:45px;
+                height:45px;
+                background-color:#CCCCFF;
+                position:absolute;
+                right:30px;
+                top:100px;
+                transform:rotate(45deg);
+                border-radius:5px;
+            }
+            .lingxing2{
+                width:45px;
+                height:45px;
+                background-color:#CCCCFF;
+                position:absolute;
+                right:30px;
+                top:190px;
+                transform:rotate(45deg);
+                border-radius:5px;
+            }   
+            .lingxing1 p{
+                color:white;
+                text-align:center;
+                line-height:1;
+                font-size:24px;
+            }
+            .lingxing2 p{
+                color:white;
+                text-align:center;
+                line-height:1;
+                font-size:24px;
+            }
+            .lingxing1:hover{
+            background-color:pink;
+            }
+            .lingxing2:hover{
+            background-color:pink;
+            }
+  
+
+            .fifthP:hover{
+            opacity:1.0;
+            }
+            #firstp_box{
+            position:relative;
+            }
+            #firstp_box span{
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+            font-weight: bold;
+            width: 90%;
+            color: #fff;
+            }
+            #secondp_box{
+            position:relative;
+            }
+            #secondp_box span{
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+            font-weight: bold;
+            width: 90%;
+            color: #fff;
+            }
+            #thirdp_box{
+            position:relative;
+            }
+            #thirdp_box span{
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+            font-weight: bold;
+            color: #fff;
+            }
+            #fourthp_box{
+            position:relative;
+            }
+            #fourthp_box span{
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+            font-weight: bold;
+            width: 90%;
+            color: #fff;
+            }
+            #fifthp_box{
+            position:relative;
+            }
+            #fifthp_box span{
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+            font-weight: bold;
+            width: 90%;
+            color: #fff;
+            }
+            .fivepicture_box{
+                position:relative;
+            }
+            .firstP{
+                top:100px;
+                position:absolute;
+                width:170px;
+                height:170px;
+                background-image:url('http://ww4.sinaimg.cn/mw690/85e00174jw8ekooig1hrpj20no0noab5.jpg');
+                background-size:cover;
+                left:29px;
+                float:left;
+                opacity:0.7;
+            }
+            .firstP:hover{
+            opacity:1.0;
+            }
+            .secondP{
+                top:100px;
+                position:absolute;
+                width:170px;
+                height:170px;
+                background-image:url('https://wx1.sinaimg.cn/mw690/0066mps3gy1fvjt5ltv4bj306405nwfv.jpg');
+                background-size:cover;
+                margin-left:58px;
+                float:left;
+                opacity:0.7;
+            }
+            .secondP:hover{
+            opacity:1.0;
+            }
+            .thirdP{
+                top:100px;
+                width:170px;
+                height:170px;
+                opacity:0.7;
+                background-image:url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjrw8cwc8j30gm0ghgum.jpg');
+                background-size:cover;
+                margin-left:29px;
+                float:left;  
+                position:absolute;
+            }
+            .thirdP:hover{
+            opacity:1.0;
+            }
+            .fourthP{
+                top:100px;
+                position:absolute;
+                width:170px;
+                opacity:0.7;
+                height:170px;
+                background-image:url('https://wx2.sinaimg.cn/mw690/0066mps3gy1fvjry79nnjj30ff0fp45x.jpg');
+                background-size:cover;
+                margin-left:29px;
+                float:left;  
+            }
+            .fourthP:hover{
+            opacity:1.0;
+            }
+            .fifthP{
+                top:100px;
+                opacity:0.7;
+                position:absolute;
+                width:170px;
+                height:170px;
+                background-image:url('https://wx1.sinaimg.cn/mw690/0066mps3gy1fvjrs6ktcvj30tn0uskjl.jpg');
+                background-size:cover;
+                margin-left:29px;
+                float:left;  
+                       
+            }    
+            .fanzao{
+            position:relative;
+            }
+            .fanzao img{
+            position:absolute;
+            margin-top:30px;
+            margin-left:30px;    
+            width:50px;
+            height:50px;
+            }
+            .fanzao h3{
+                top:30px;
+                left:100px;
+                position:absolute;
+                color:#FF6666;              
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_picture">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537707349972&di=f69a06c15e85fd259ce22bd6967276b6&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D2627930626%2C1727618022%26fm%3D214%26gp%3D0.jpg">
+            <div class="zhedang"></div>
+        </div>
+        <div class="main">
+        <div class="yao_picture">
+            <div class="yao_box">
+                <img src="https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjbt0jup6j30ft0fxdle.jpg">
+                <h3>瑶瑶の照片</h3>
+                <div class="picture_box" id="background">
+                </div>
+                <div class="left_box" id="zuo">
+                    <div class="jiantou_box">
+                       <div class="xiaojiantou_left">
+                       </div>
+                    </div>
+                </div>
+                <div class="right_box" id="you">
+                    <div class="jiantou_box">
+                       <div class="xiaojiantou_right">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fucksong">
+            <div class="fucksong_box">
+            <img src="https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjbt0jup6j30ft0fxdle.jpg">
+            <h3>生日快乐歌！</h3>
+            <br/>
+               
+            <audio src="https://m10.music.126.net/20180925201657/197eca9a02bfd28354c07aca5ab3760e/ymusic/1416/62e4/ff0f/c14e8856a73e91b5885c3ec83989ea9f.mp3" controls loop preload autoplay></audio>
+            </div>
+        </div>
+        <div class="color_bigbox">    
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            <div class="color5"></div>
+            <div class="color6"></div>
+        </div>
+        <div class="color_bigbox2">
+            <div class="color11"></div>
+            <div class="color22"></div>
+            <div class="color33"></div>
+            <div class="color44"></div>
+            <div class="color55"></div>
+            <div class="color66"></div>
+        </div>    
+        <div class="jiyu">
+            <div class="jiyu_box">
+               <img class="first_p" src="https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjbt0jup6j30ft0fxdle.jpg">
+               <h3>朋友の寄语</h3>
+               <div class="lingxing1" id="ling1">
+                 <p></p>
+               </div>
+               <div class="lingxing2" id="ling2">
+                 <p></p>
+               </div>
+                
+            <div class="wenben">
+                <p style="color:grey;">亲爱的瑶瑶：</p>
+                <p class="s">与你从小学一年级认识到现在，我们相伴已经有15个年头了，从幼稚到成熟，我们见证着对方的成长。我很感激能有你这样的好朋友！愿意分享我的喜怒哀乐!</p><p class="s">在你21岁生日之际，我凭借自己微弱的打码能力，为你制作一个庆祝你生日的网页！这个网页将会一直存放在我网上的资源库里！希望你能喜欢！</p>
+                <p class="s">对你的祝福有很多，之前在看小说《你好，旧时光》时，女主周周认为对人最好的祝福莫过于“万事胜意”四个字。我也希望你的生活一切如你所愿。希望往后的日子里，你能够成功减肥，收获你想要的苗条身材；你能遇到一个互相喜欢、能够相伴终身的对象，不需要暗恋，也不需要怀有歉意地拒绝；你能学业有成，日后不管是在美国，还是回国，都能找到一份高薪的、你满意的职业；你能和你的家人相处愉快，没有那么多不必要的烦恼！</p><p class="s">最重要的是，每天都要开开心心！照顾好自己！
+                </p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="fanzao">
+            <img src="https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjbt0jup6j30ft0fxdle.jpg">
+            <h3>瑶瑶の进化史</h3>
+            <div class="fivepicture_box">
+               <div class="firstP" id="firstp_box"><span class="s_w">幼儿园</span></div>
+               <div class="secondP" id="secondp_box"><span class="s_w">小学</span></div>
+               <div class="thirdP" id="thirdp_box"><span class="s_w">初中</span></div>
+               <div class="fourthP" id="fourthp_box"><span class="s_w">高中</span></div>            
+               <div class="fifthP" id="fifthp_box"><span class="s_w">大学</span></div>
+            </div>            
+            </div>
+        </div>
+
+        <script>     
+        alert("祝你生日快乐呀！\^o^/ ");
+        var lianjie=["https://wx3.sinaimg.cn/mw690/0066mps3gy1fvje51a155j30qo0zkql7.jpg","https://wx4.sinaimg.cn/mw690/0066mps3gy1fvje4u2nqcj30qo0zkqo3.jpg","https://wx4.sinaimg.cn/mw690/0066mps3gy1fvje51luioj30s60lz7nj.jpg","https://wx3.sinaimg.cn/mw690/0066mps3gy1fvje4e5vnkj30ku0ku0zq.jpg","https://wx2.sinaimg.cn/mw690/0066mps3gy1fvje50yr4rj30qo0zk4fb.jpg","https://wx4.sinaimg.cn/mw690/0066mps3gy1fvje4hvvg1j31400u00wf.jpg","https://wx2.sinaimg.cn/mw690/0066mps3gy1fvje4zjtxxj30qo0zkwts.jpg","https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjf1vqtt6j30u01404qp.jpg","https://wx3.sinaimg.cn/mw690/0066mps3gy1fvjf1qoiu6j30u01404bj.jpg","https://wx1.sinaimg.cn/mw690/0066mps3gy1fvjf1sfezrj31400u0qnr.jpg","https://wx4.sinaimg.cn/mw690/0066mps3gy1fvjf1lc9zyj30oo0ooq4c.jpg"];
+        var b=3;
+        var zuobutton=document.getElementById("zuo");
+        function zuofan(){
+            if(b>0){
+                b=b-1;
+                document.getElementById("background").style.backgroundImage='url("'+lianjie[b]+'")';}
+            else{
+                b=9;
+                document.getElementById("background").style.backgroundImage='url("'+lianjie[b]+'")';}
+        }
+        zuobutton.onclick=zuofan;
+        var youbutton=document.getElementById("you");
+        function youfan(){
+        if(b<8){
+            b=b+1;
+            document.getElementById("background").style.backgroundImage='url("'+lianjie[b]+'")';}
+        else{
+            b=0;
+            document.getElementById("background").style.backgroundImage='url("'+lianjie[b]+'")';}
+        }
+        youbutton.onclick=youfan;
+     
+  
+        window.onload=function(){
+        zuofan();
+        };
+        window.onload=function(){
+        youfan();
+        };
+
+        </script>
+    </body> 
+</html>
