@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MUJI风·浮生记</title>
+        <style>
+        /*整体部分*/
+        body{
+            width:100%;
+            margin:0;
+            font-size:10.6px;
+            color:#333;
+            font-style:"Helvetica", "Lucida Grande", "Microsoft YaHei", sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color:#666;
+        }
+        img{
+            max-width:100%;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+        }
+        /*页眉部分*/
+        #yemei{
+            width:100%;
+            max-width:1024px;
+            height:70px;
+            margin:0 auto;
+        }
+        #yemei_box{
+            position: relative;
+        }
+        #logo{
+            width:130px;
+            position: absolute;
+            margin:0;
+            top:0;
+            left:0;
+            margin-left:-11px;
+        }
+        #yemei #logo a{
+            display:block;
+            padding-top:7px;
+        }
+        #yemei ul{
+            padding-left:15%;
+        }
+        #yemei li{
+            float:left;
+            padding:28px 10px;
+            line-height:1;
+            font-size:13px;
+        }
+        #yemei li:hover{
+            opacity:0.7;
+        }
+        #main{
+            width:100%;
+            max-width:1024px;
+            margin:0 auto;
+        }
+
+        #main ul{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        #big_four{
+            width:100%;
+            max-width:1024px;
+            margin:0 auto;
+        }
+        #mainPanel{
+            width:100%;
+            max-width:1024px;
+            height:auto;
+            margin-bottom:20px;
+            margin:0 auto;
+        }
+        #fourPanel{
+            margin-bottom:15px;
+        }
+        #fourPanel li{
+            margin-top:10px;
+            width:23.5%;
+            max-width: 245px;
+            margin-right:2%;
+            float:left;
+        }
+        #fourPanel li:last-child{
+            margin-right: 0;
+            height:auto;
+        }
+        #fourPanel li a{
+            position: relative;
+            display:block;
+        }
+        #fourPanel .title{
+            position: absolute;
+            width:90%;
+            left:10px;
+            bottom:10px;
+            color:#fff;
+            font-weight:bold;
+            font-size:15px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5)
+        }
+        .more{
+            margin:-38px auto 1em;
+            width:100%;
+            max-width:1004px;
+            margin:0 auto;
+            text-align:right;
+            font-size:14px;
+            text-indent:-21px;
+            padding-right:20px;
+            position: relative;
+        }
+        #big_four .more{
+            margin-top:0;
+            }
+        .more a::after{
+            content:'';
+            display:block;
+            width:7px;
+            height:7px;
+            border-top:1px solid #7f7f7f;
+            border-right:1px solid #7f7f7f;
+            transform:rotate(45deg);
+            margin:-5px -5px 0 0;
+            position:absolute;
+            right:10px;
+            top:50%;
+        }
+        .more1{
+            margin:1px auto 1em;
+            height:20px;
+            width:100%;
+            max-width:1004px;
+            margin:0 auto;
+            text-align:right;
+            font-size:14px;
+            text-indent:-21px;
+            padding-right:20px;
+            position: relative;
+            }
+        .more1_jiantou{
+            width:7px;
+            height:7px;
+            border-top:1px solid #7f7f7f;
+            border-right:1px solid #7f7f7f;
+            transform:rotate(45deg);
+            position:absolute;
+            top:10%;
+            right:-15px;
+            }
+        #product{
+            width:100%;
+            max-width: 1024px;
+            margin:0 auto;
+        }
+        h1{
+            font-size:18px;
+            line-height:1;
+            color:#333;
+            margin:40px auto -1em;
+            width:100%;
+            max-width:1024px;
+        }
+        #product ul{
+            border-bottom:1px solid #eee;
+            padding-bottom:10px;
+            }
+        #product li{
+            width:15%;
+            margin-right:2%;
+            margin-top:0;
+            margin-left:0;
+            padding-right:2px;
+            background-repeat:no-repeat;
+            background-size:auto 40px;
+            background-position:8px center;
+            box-sizing:border-box;
+            font-size:12px;
+    
+        }
+        #product li:nth-child(6n){
+            margin-right:0;
+        }
+        #product a{
+            padding:0 2px 0 55px;
+            min-height: 60px;
+            position: relative;
+            display: block;
+        }
+        #product a span{
+            position: absolute;
+            top:40%;
+        }
+        #new_product ul{
+            width:100%;
+            max-width:1024px;
+            margin:0 auto;
+            }
+        #new_product li{
+            width:18%;
+            margin-right:2.5%;
+            max-width:184px;
+            float:left;
+            }
+        #new_product li:last-child{  
+            margin-right:0;
+            }
+        /*客厅*/
+        #keting,#keting ul{
+            width:100%;
+            max-width:1024px;
+            margin:0 auto;
+            }
+        #keting li{
+            width:32%;
+            margin-right:2%;
+            max-width:328px;
+            float:left;
+            height:250px;
+            background-size:cover;
+            margin-top:20px;
+
+            }
+        #keting li a{
+            width:100%;
+            display:block;
+            padding:0;
+            position:relative;
+            height:100%;           
+            }
+        #keting li a span{
+            position:absolute;
+            left:10px;
+            bottom:10px;
+            font-weight:bold;
+            text-shadow:1px 1px 3px rgba(0,0,0,0,5);
+            font-size:16px;
+            color:#fff;
+            width:90%;
+            }
+        #keting li:last-child{
+            margin-right:0;
+        }
+        /*卧室*/
+
+        #woshi,#woshi ul{
+            width:100%;
+            max-width:1024px;
+            margin:0 auto;
+            }
+        #woshi li{
+            width:32%;
+            margin-right:2%;
+            max-width:328px;
+            float:left;
+            height:250px;
+            background-size:cover;
+            margin-top:20px;
+
+            }
+        #woshi li a{
+            width:100%;
+            display:block;
+            padding:0;
+            position:relative;
+            height:100%;           
+            }
+        #woshi li a span{
+            position:absolute;
+            left:10px;
+            bottom:10px;
+            font-weight:bold;
+            text-shadow:1px 1px 3px rgba(0,0,0,0,5);
+            font-size:16px;
+            color:#fff;
+            width:90%;
+            }
+        #woshi li:last-child{
+            margin-right:0;
+        }
+        /*餐厅*/  
+        #canting,#canting ul{
+            width:100%;
+            max-width:1024px;
+            margin:0 auto;
+            }
+        #canting li{
+            width:32%;
+            margin-right:2%;
+            max-width:328px;
+            float:left;
+            height:250px;
+            background-size:cover;
+            margin-top:20px;
+
+            }
+        #canting li a{
+            width:100%;
+            display:block;
+            padding:0;
+            position:relative;
+            height:100%;           
+            }
+        #canting li a span{
+            position:absolute;
+            left:10px;
+            bottom:10px;
+            font-weight:bold;
+            text-shadow:1px 1px 3px rgba(0,0,0,0,5);
+            font-size:16px;
+            color:#fff;
+            width:90%;
+            }
+        #canting li:last-child{
+            margin-right:0;
+        }
+        #mu_box{
+            padding-top:40px;
+            font-size:15px;
+            color:#666666;  
+            line-height:24px;
+            }
+        #emm{
+            width:100%;
+        
+            margin:0 auto;
+            padding:15px 0;
+            display:block;
+            background:#ebebeb;
+            margin-top:50px;
+                
+            }
+            #left_box{
+            float:left;
+            }
+            #right_box{
+            float:right;
+            }
+            #left_box a{
+            display:block;
+            }
+            #left_box ul{
+            list-style:none;
+            padding:0;
+            margin:0;
+            }
+            #left_box li{
+            margin-right:10px;
+            float:left;
+            }
+            #left_box li img{
+                width:auto;
+                height:25px;
+                vertical-align:middle;
+            }
+            #emm::after,#emm ul::after{
+            clear:both;
+            content:'';
+            display:block;
+            }
+            #emm_box{
+            width:1024px;
+                margin:0 auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="yemei">
+            <div id="yemei_box">
+            <div id="logo"><a href='#'><img src='https://wx2.sinaimg.cn/mw690/0066mps3gy1fvyizm9osfj3053023mx8.jpg' alt='浮生记'></a></div>
+            <nav id="daohang">
+                <ul>
+                <li><a href='https://fushengji.jiyoujia.com/category-1396879990.htm?spm=a1z10.5-c-s.w5842-19041276917.7.412d8a74aMYRSc&search=y&parentCatId=1268629188&parentCatName=%BC%D2%BE%DF%CF%B5%C1%D0&catName=Cherry+life+%26bull%3B+%D0%C2%C6%B7#bd' target='_blank'>cherry life</a></li>
+                <li><a href='https://fushengji.jiyoujia.com/category-1331247112.htm?spm=a1z10.5-c-s.w5842-19041276917.8.35208a74n2Za9W&search=y&parentCatId=1268629188&parentCatName=%BC%D2%BE%DF%CF%B5%C1%D0&catName=%B5%BA%D3%EC%CF%B5%C1%D0#bd' target='_blank'>岛屿系列</a></li>
+                <li><a href='https://fushengji.jiyoujia.com/category-1331247113.htm?spm=a1z10.5-c-s.w5842-19041276917.9.3efd5ac2Q9iM98&search=y&parentCatId=1268629188&parentCatName=%BC%D2%BE%DF%CF%B5%C1%D0&catName=%D6%DC%C4%A9%CF%B5%C1%D0#bd' target='_blank'>周末系列</a></li>
+                <li><a href='https://fushengji.jiyoujia.com/category-1268629190.htm?spm=a1z10.5-c-s.w5842-19041276917.10.6f36679856PSAF&search=y&parentCatId=1268629188&parentCatName=%BC%D2%BE%DF%CF%B5%C1%D0&catName=%CE%C2%C9%AF%CF%B5%C1%D0#bd' target='_blank'>温莎系列</a></li>
+                <li><a href='https://fushengji.jiyoujia.com/category-1268629189.htm?spm=a1z10.5-c-s.w5842-19041276917.11.39fe52489ZlyJH&search=y&parentCatId=1268629188&parentCatName=%BC%D2%BE%DF%CF%B5%C1%D0&catName=%C9%EE%B9%C8%CF%B5%C1%D0#bd' target='_blank'>深谷系列</a></li>
+                <li><a href='https://fushengji.jiyoujia.com/category-1268629191.htm?spm=a1z10.5-c-s.w5842-19041276917.12.4cd823d0UEKrrH&search=y&parentCatId=1268629188&parentCatName=%BC%D2%BE%DF%CF%B5%C1%D0&catName=%BC%F2%D4%BC%CF%B5%C1%D0#bd' target='_blank'>简约系列</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <div id="main">
+            <section id='big_four'>
+                <div id="mainPanel">
+                    <img src='http://img.027cgb.com/608647/QQ%E5%9B%BE%E7%89%8720181007100618.png' alt='北欧白橡木纯实木沙发'>
+                </div>
+                <div id="fourPanel">
+                    <ul>
+                        <li><a href='https://item.taobao.com/item.htm?spm=2013.1.0.0.2a776b99Kan6ob&id=556851311406&scm=1007.12144.95220.42296_0&pvid=1a76a2e4-0163-462f-9a62-68fb387435c0&utparam=%7B%22x_hestia_source%22%3A%2242296%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A0%2C%22x_src%22%3A%2242296%22%2C%22x_pos%22%3A1%2C%22x_pvid%22%3A%221a76a2e4-0163-462f-9a62-68fb387435c0%22%2C%22x_object_id%22%3A556851311406%7D' target="_blank"><img src='http://img.alicdn.com/bao/uploaded/O1CN011EiMw48FXorHwjY_!!168050385.jpg_300x300.jpg' alt='北欧风格电视柜'><span class='title'>有颜电视柜</span></a></li>
+                        <li><a href='https://item.taobao.com/item.htm?spm=2013.1.0.0.5dd47839bAawS8&id=556751033043&scm=1007.12144.95220.42296_0&pvid=e1dd4122-c42e-4548-90a0-0b40b739f869&utparam=%7B%22x_hestia_source%22%3A%2242296%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A0%2C%22x_src%22%3A%2242296%22%2C%22x_pos%22%3A2%2C%22x_pvid%22%3A%22e1dd4122-c42e-4548-90a0-0b40b739f869%22%2C%22x_object_id%22%3A556751033043%7D' target="_blank"><img src='http://img.alicdn.com/bao/uploaded/TB1iRPUSFXXXXXjXFXXYXGcGpXX_M2.SS2_300x300.jpg' alt='北欧白橡木储物柜'><span class='title'>有颜六斗柜</span></a></li>
+                        <li><a href='https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276900.1.7dbe2cb7WHzSEZ&id=575280211413' target="_blank"><img src='http://img.alicdn.com/bao/uploaded/O1CN011EiMvxUsqB490Ie_!!168050385.jpg_300x300.jpg' alt='北欧餐桌椅组合'><span class='title'>知暖餐桌</span></a></li>
+                        <li><a href='https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.17.31b2551bcmpzbq&id=45082343816' target="_blank"><img src='http://img.alicdn.com/bao/uploaded/TB1r8gUg8oHL1JjSZFwYXH6vpXa_M2.SS2_300x300.jpg' alt='北欧白橡木餐桌'><span class='title'>简约餐桌</span></a></li>
+                    </ul>
+                </div>
+                <div class='more'><a href="https://fushengji.jiyoujia.com/?spm=2013.1.0.0.23e57692mrEEsB" target='_blank'>更多</a></div>
+            </section>
+            <section id="product">
+                <h1>产品</h1>
+                <div class="more1"><a href="https://fushengji.jiyoujia.com/?spm=2013.1.0.0.23e57692mrEEsB" target='_blank'>网络商城<div class="more1_jiantou"></div></a></div>
+                <ul>
+                    <li style="background-image: url('https://wx3.sinaimg.cn/mw690/0066mps3gy1fvzcq0q130j305s05s74e.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546980.htm?spm=a1z10.5-c-s.w5842-19041276917.14.5d1654dfj2wVd2&search=y&parentCatId=1243546979&parentCatName=%B2%CD%CC%FC%BF%D5%BC%E4&catName=%B2%CD%D7%C0#bd' target='_blank'><span>餐桌</span></a></li>
+                    <li style="background-image: url('https://wx2.sinaimg.cn/mw690/0066mps3gy1fvzcq48blkj30dd0dc76n.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546981.htm?spm=a1z10.5-c-s.w5842-19041276917.15.5a59551bAeKjCb&search=y&parentCatId=1243546979&parentCatName=%B2%CD%CC%FC%BF%D5%BC%E4&catName=%B2%CD%D2%CE#bd' target='_blank'><span>餐椅</span></a></li>
+                    <li style="background-image: url('https://wx3.sinaimg.cn/mw690/0066mps3gy1fvzcsabzljj30l60l577f.jpg')"><a href='https://fushengji.jiyoujia.com/category-1279409672.htm?spm=a1z10.5-c-s.w5842-19041276917.16.5a59551b8qO0je&search=y&parentCatId=1243546979&parentCatName=%B2%CD%CC%FC%BF%D5%BC%E4&catName=%B3%A4%B5%CA#bd' target='_blank'><span>长凳</span></a></li>
+                    <li style="background-image: url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvzcsa4m8rj30bc0bdq56.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546985.htm?spm=a1z10.5-c-s.w5842-19041276917.18.374d160eG2TspR&search=y&parentCatId=1243546983&parentCatName=%BF%CD%CC%FC%BF%D5%BC%E4&catName=%C9%B3%B7%A2#bd' target='_blank'><span>沙发</span></a></li>
+                    <li style="background-image: url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvzcq0ux2ij306a06b0t1.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546987.htm?spm=a1z10.5-c-s.w5842-19041276917.19.2d6d13c8WD1nId&search=y&parentCatId=1243546983&parentCatName=%BF%CD%CC%FC%BF%D5%BC%E4&catName=%B5%E7%CA%D3%B9%F1#bd' target='_blank'><span>电视柜</span></a></li>
+                    <li style="background-image: url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvzcq1x8mpj30l90kzgrb.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546984.htm?spm=a1z10.5-c-s.w5842-19041276917.20.5cb37701zHxy9L&search=y&parentCatId=1243546983&parentCatName=%BF%CD%CC%FC%BF%D5%BC%E4&catName=%B2%E8%BC%B8%B1%DF%BC%B8#bd' target='_blank'><span>茶几边几</span></a></li>
+                    <li style="background-image: url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvzcq4zwukj30le0lg4b9.jpg')"><a href='https://fushengji.jiyoujia.com/category-1394618062.htm?spm=a1z10.5-c-s.w5842-19041276917.21.79457d16NqBCas&search=y&parentCatId=1243546983&parentCatName=%BF%CD%CC%FC%BF%D5%BC%E4&catName=%B1%DF%B9%F1%B6%B7%B9%F1#bd' target='_blank'><span>边柜斗柜</span></a></li>
+                    <li style="background-image: url('https://wx1.sinaimg.cn/mw690/0066mps3gy1fvzcq46ngfj30dk0dlq5t.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546989.htm?spm=a1z10.5-c-s.w5842-19041276917.23.59821ee4O1zGkS&search=y&parentCatId=1243546988&parentCatName=%CA%E9%B7%BF%BF%D5%BC%E4&catName=%CA%E9%D7%C0#bd' target='_blank'><span>书桌</span></a></li>
+                    <li style="background-image: url('https://wx2.sinaimg.cn/mw690/0066mps3gy1fvyrovdilnj30cx0cwtau.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243556398.htm?spm=a1z10.5-c-s.w5842-19041276917.24.54f8343fJxMVIu&search=y&parentCatId=1243546988&parentCatName=%CA%E9%B7%BF%BF%D5%BC%E4&catName=%D2%CE%B5%CA#bd' target='_blank'><span>椅凳</span></a></li>
+                    <li style="background-image: url('https://wx1.sinaimg.cn/mw690/0066mps3gy1fvyroqux6bj30e50dejtp.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546992.htm?spm=a1z10.5-c-s.w5842-19041276917.26.67c754dfc1blG1&search=y&parentCatId=1243546991&parentCatName=%CE%D4%CA%D2%BF%D5%BC%E4&catName=%B4%B2#bd' target='_blank'><span>床</span></a></li>
+                    <li style="background-image: url('https://wx1.sinaimg.cn/mw690/0066mps3gy1fvyroskiraj30cy0dediz.jpg')"><a href='https://fushengji.jiyoujia.com/category-1243546993.htm?spm=a1z10.5-c-s.w5842-19041276917.27.63dc41647ReFe8&search=y&parentCatId=1243546991&parentCatName=%CE%D4%CA%D2%BF%D5%BC%E4&catName=%B4%B2%CD%B7%B9%F1#bd' target='_blank'><span>床头柜</span></a></li>
+                </ul>
+            </section>
+            <section id="new">
+                <h1>新品预览</h1>
+                <div class='more'><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276910.1.51b12cb7MxHCNc&id=542794881897" target='_blank'>更多</a></div>
+                <div id="new_product">
+                    <ul>
+                        <li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276910.1.51b12cb7MxHCNc&id=542794881897" target="_blank"><img src="https://gd3.alicdn.com/imgextra/i4/168050385/TB2XVdrXbTxJuJjSZFlXXaEwVXa_!!168050385.jpg_400x400.jpg" alt="米白（3-4人位）"></a></li>
+                        <li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276910.1.51b12cb7MxHCNc&id=542794881897" target="_blank"><img src="https://gd2.alicdn.com/imgextra/i1/168050385/TB2bgN0XhiEJuJjSsziXXcpZFXa_!!168050385.jpg_400x400.jpg" alt="米白（1人位）"></a></li>
+                        <li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276910.1.51b12cb7MxHCNc&id=542794881897" target="_blank"><img src="https://gd1.alicdn.com/imgextra/i4/168050385/TB2.POAXh5GJuJjSZFFXXagvFXa_!!168050385.jpg_400x400.jpg" alt="深灰（3-4人位）"></a></li>
+                        <li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276910.1.51b12cb7MxHCNc&id=542794881897" target="_blank"><img src="https://gd3.alicdn.com/imgextra/i1/168050385/TB2upXrXbTxJuJjSZFlXXaEwVXa_!!168050385.jpg_400x400.jpg" alt="深灰（1人位）"></a></li>
+                        <li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w14076209-19041276910.1.51b12cb7MxHCNc&id=542794881897" target="_blank"><img src="https://gd4.alicdn.com/imgextra/i2/168050385/TB2gJbSbL2H8KJjy0FcXXaDlFXa_!!168050385.jpg_400x400.jpg" alt="胡桃色预定"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="keting">
+                <h1>客厅空间</h1>
+                <div class='more'><a href="https://fushengji.jiyoujia.com/category-1243546983.htm?spm=a1z10.1-c-s.0.0.679c2cb7FwkUjZ&search=y&catName=%BF%CD%CC%FC%BF%D5%BC%E4" target='_blank'>更多</a></div>
+                <ul>
+                    <li style="background-image:url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvze72kqdlj30pv0iknky.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.14.6bec4a49KcUMqx&id=575209081970" target="_blank"><span>小岛边柜</span></a></li>
+                    <li style="background-image:url('https://gd1.alicdn.com/imgextra/i1/168050385/O1CN011EiMwldZJFSEbmo_!!168050385.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.26.6bec4a49KcUMqx&id=542794881897" target="_blank"><span>周末沙发</span></a></li>
+                    <li style="background-image:url('https://img.alicdn.com/imgextra/i3/168050385/TB27WeEieOSBuNjy0FdXXbDnVXa_!!168050385.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.59.6abf4a49hLkRhJ&id=569174485276" target="_blank"><span>简致衣架</span></a></li>
+                </ul>
+            </section>
+            <section id="woshi">
+                <h1>卧室空间</h1>
+                <div class='more'><a href="https://fushengji.jiyoujia.com/category-1243546991.htm?spm=a1z10.1-c-s.0.0.679c2cb7H59JIq&search=y&catName=%CE%D4%CA%D2%BF%D5%BC%E4" target='_blank'>更多</a></div>
+                <ul>
+                    <li style="background-image:url('https://img.alicdn.com/imgextra/i2/168050385/O1CN011EiMw5aUdZutE2D_!!168050385.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.11.2657343fD8OEvn&id=575423832879" target="_blank"><span>立耳床头柜</span></a></li>
+                    <li style="background-image:url('https://img.alicdn.com/imgextra/i4/168050385/O1CN011EiMw3V57kVOn10_!!168050385.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.11.57704164XUsxU4&id=575323368730" target="_blank"><span>早安双人床</span></a></li>
+                    <li style="background-image:url('https://wx1.sinaimg.cn/mw690/0066mps3gy1fvzecumds0j30pq0hpx07.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.37.5579b1ffquEDx7&id=525438602662" target="_blank"><span>田园边桌</span></a></li>
+                </ul>
+            </section>
+            <section id="canting">
+                <h1>餐厅空间</h1>
+                <div class='more'><a href="https://fushengji.jiyoujia.com/category-1243546979.htm?spm=2013.1.w5842-19041276922.13.332c7ff8Fa56SC&search=y&catName=%B2%CD%CC%FC%BF%D5%BC%E4#bd" target='_blank'>更多</a></div>
+                <ul>
+                    <li style="background-image:url('https://wx4.sinaimg.cn/mw690/0066mps3gy1fvzf1w3zcbj30pw0hzkaw.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.32.5e60241947Dj9s&id=539326010926" target="_blank"><span>大小温莎椅</span></a></li>
+                    <li style="background-image:url('https://wx2.sinaimg.cn/mw690/0066mps3gy1fvzfdckhc3j30pk0ime0v.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.14.32e192d2KhlGQM&id=550995692174" target="_blank"><span>Y-Chair</span></a></li>
+                    <li style="background-image:url('https://wx3.sinaimg.cn/mw690/0066mps3gy1fvzfhuft7fj30pu0ia7lj.jpg')"><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-19041276918.26.5e4c551b1SCbOf&id=557668431639" target="_blank"><span>周末餐桌</span></a></li>
+
+                </ul>
+            </section>  
+            <section id="mu">
+                <h1>有木的生活|关于木</h1>
+                <div id="mu_box">
+                    <p>绝少人是不爱木的，因为那与我们是来自森林的原始记忆有关。</p>
+                    <p>人树之间也包含着对于生命意义的故事，自古以来也一直广泛的被流传、歌颂。人们使用木材来帮助生活，从狩猎工具开始到建筑房舍、家具、纸类、生活道具、到现代新科技的开发，也都与木材有密不可分的关系。</p>
+                    <p>木材给人直接的感受是温暖、朴素、舒适、洁净、柔软、独特的，在平顺的木纹里，类似肌肤的触感中，也能有安抚人心、调整情绪的基本功能。</p>
+                    <p>木的属性有着其他的材料无法取代的特性：吸湿、保暖、耐燃、且具有弹性张力、同时释放优雅香气。</p>
+                    <p>带给人们幸福的生活。</p>           
+                </div>
+            </section> 
+        </div>
+            <aside id="emm">
+                <div id="emm_box">
+                <div id="left_box">
+                    <ul>
+                        <li><a href="#"><img src="https://www.muji.com.cn/cn/net/contents/img/misc_weibo.png" alt="weibo"></a></li>
+                        <li><a href="#"><img src="https://www.muji.com.cn/cn/net/contents/img/misc_wechat.png" alt="wechat"></a></li>
+                    </ul>
+                </div>
+                </div>
+            </aside>
+    </body>
+</html>
