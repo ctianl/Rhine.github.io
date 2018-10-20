@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>今周计划清单</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <style>
+            body{
+                
+                padding-top:30px;
+            background-color:#FFFFCC;
+            }
+            #quanbu{
+             width:500px;
+                margin:0 auto;
+       
+            }
+            #boss{
+            margin:0 auto;
+             
+            }
+            h1{
+            color:pink;
+                text-align:center;
+                
+               
+            }
+            h3{
+             line-height:50px;
+             width:100%;
+                height:50px;
+                background-color:white;
+                box-shadow:0px 5px 5px grey;
+                margin:0;
+          
+            }
+         
+            ul{
+             list-style:none;
+                padding:0;
+            }
+            .empty{
+            width:100%;
+                height:10px;
+                background-color:white;
+                margin-top:10px;
+            }
+            .detail{
+            width:300px;
+                height:50px;
+                border-radius:20px;
+                border:2px solid pink;
+                margin-left:10px;
+                padding-left:15px;
+                padding-top:9px;
+                margin-top:10px;
+                box-sizing:border-box;
+                font-size:20px;
+                
+               
+                
+            }
+
+            .all_li{
+                width:320px;
+                margin-left:100px;
+                margin-bottom:20px;
+                float:left;
+           
+         
+            }
+            .small{
+            background-color:white;
+            box-shadow:0px 5px 5px grey;
+            
+                display:block;
+           
+          
+          
+           
+            }
+            #add15{
+                width:300px;
+                height:50px;
+                font-size:20px;
+                position:absolute;
+            
+                border:2px solid grey;
+                padding-left:15px;
+                border-radius:20px;
+                margin-top:10px;
+                margin-left:10px;
+            }
+            #add16,#add17,#add18,#add19,#add20,#add21{
+                width:300px;
+                height:50px;
+                font-size:20px;
+                position:absolute;
+            
+                border:2px solid grey;
+                padding-left:15px;
+                border-radius:20px;
+                margin-top:10px;
+                margin-left:10px;
+            }
+            #addButton15,#addButton17,#addButton18,#addButton19,#addButton20,#addButton21{
+               margin-left:210px;
+               margin-top:70px;
+               margin-bottom:10px;
+                border-radius:10px;
+                color:white;
+                background-color:pink;
+                font-weight:bold;
+                width:100px;
+                height:30px;
+                font-size:15px;
+            
+        
+            }
+            #addButton16{
+               margin-left:210px;
+               margin-top:70px;
+               margin-bottom:10px;
+                border-radius:10px;
+                color:white;
+                background-color:pink;
+                font-weight:bold;
+                width:100px;
+                height:30px;
+                font-size:15px;
+            }
+            .notSelected{
+            width:20px;
+                line-height:50px;
+                margin-right:10px;
+                vertical-align:middle;
+            }
+            #special{
+             margin-left:300px;
+                width:120px;
+                height:30px;
+                border-radius:30px;
+                outline:none;
+                font-size:15px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="quanbu">
+        <h1>本周计划清单</h1>
+        <ul id="boss">
+            <li id="date15" class="all_li">
+                <h3 style="background-color:#FF66FF;text-indent:10px;">10月15日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">复习之前的听力</div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">交手机票据</div></li>          
+                    <li><input id="add15" type="text" placeholder="+添加任务"></li>
+                    <li><input type="button" value="确定提交" id="addButton15"></li>
+                  
+                </ul>
+            </li>
+
+            <li id="date16" class="all_li">
+                <h3 style="background-color:#CC66FF;text-indent:10px;">10月16日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">买新手机呀！</div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">完成手账</div></li>          
+                    <li><input id="add16" type="text" placeholder="+添加任务" ></li>
+                    <li><input type="button" value="确定提交" id="addButton16"></li>  
+                </ul>
+            </li>
+
+            <li id="date17" class="all_li">
+                <h3 style="background-color:#9966FF;text-indent:10px;">10月17日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">复习之前的听力</div></li>
+                    
+                    <li><input id="add17" type="text" placeholder="+添加任务" ></li>
+                    <li><input type="button" value="确定提交" id="addButton17"></li>            
+                </ul>
+            </li>
+
+            <li id="date18" class="all_li">
+                <h3 style="background-color:#FF66CC;text-indent:10px;">10月18日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">踩单车</div></li>
+                           
+                    <li><input id="add18" type="text" placeholder="+添加任务" ></li>
+                    <li><input type="button" value="确定提交" id="addButton18"></li>                     
+                </ul>
+            </li>
+    
+            <li id="date19" class="all_li">
+                <h3 style="background-color:#CC66CC;text-indent:10px;">10月19日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">复习jQuery</div></li>
+                            
+                    <li><input id="add19" type="text" placeholder="+添加任务" ></li>
+                    <li><input type="button" value="确定提交" id="addButton19"></li>    
+                </ul>
+            </li>
+    
+            <li id="date20" class="all_li">
+                <h3 style="background-color:#9966CC;text-indent:10px;">10月20日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">完成一篇英语阅读</div></li>
+                             
+                    <li><input id="add20" type="text" placeholder="+添加任务" ></li>
+                    <li><input type="button" value="确定提交" id="addButton20"></li>        
+                </ul>
+            </li>
+
+            <li id="date21" class="all_li">
+                <h3 style="background-color:#FF6699;text-indent:10px;">10月21日</h3>
+                <ul class="small">
+                    <li><div class="empty"></div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">精听一小时</div></li>
+                    <li><div class="detail"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">复习python</div></li>          
+                    <li><input id="add21" type="text" placeholder="+添加任务" ></li>
+                    <li><input type="button" value="确定提交" id="addButton21"></li>       
+                </ul>
+            </li>
+        </ul>
+        <input type="button" value="收起计划列表" id="special">
+        </div>
+        <script>
+         
+           $(function(){
+               $(".small").hide()
+               
+               $("h3").on("click",function(){
+                  $(".small").css("display","none")
+                   $(this).next().show()
+               })
+               $("h3").on("mouseover",function(){
+                  $(".small").css("display","none")
+                   $(this).next().show()
+               })            
+             
+              function line(){
+                $(".notSelected").on("click",function(){
+                  $(this).attr("src","https://static1.bcjiaoyu.com/70d43381cb948313baa40dabd2e6235c_v.png-200x200")
+                  $(this).parent().css({
+                    "color":"grey",
+                      "text-decoration":"line-through",
+                  })
+                })
+              }
+               line()
+               
+               $("#addButton15").on("click",function(){
+               var $value=$("#add15").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add15").before($newDiv)
+               $("#add15").val(null)   
+               line()
+               })
+
+               $("#addButton16").on("click",function(){
+               var $value=$("#add16").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add16").before($newDiv)
+               $("#add16").val(null)   
+               line()
+               })  
+               
+               $("#addButton17").on("click",function(){
+               var $value=$("#add17").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add17").before($newDiv)
+               $("#add17").val(null)   
+               line()
+               }) 
+               
+              $("#addButton18").on("click",function(){
+               var $value=$("#add18").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add18").before($newDiv)
+               $("#add18").val(null)   
+               line()
+               })
+
+               $("#addButton19").on("click",function(){
+               var $value=$("#add19").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add19").before($newDiv)
+               $("#add19").val(null)   
+               line()
+               })  
+               
+               $("#addButton20").on("click",function(){
+               var $value=$("#add20").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add20").before($newDiv)
+               $("#add20").val(null)   
+               line()
+               })    
+               $("#addButton21").on("click",function(){
+               var $value=$("#add21").val()
+               var $newDiv=$("<div class='detail'></div>").text($value)
+               var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+               $newDiv.prepend($newCircle)
+               $("#add21").before($newDiv)
+               $("#add21").val(null)   
+               line()
+               })  
+              $("#special").on("click",function(){
+                  $(".small").hide()
+              })
+           })
+        </script>
+    </body>
+</html>
