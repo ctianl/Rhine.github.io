@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>计划清单</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <style>
+            body{
+            background-color:#FFFFCC;
+                width:100%;
+                max-width:1024px;
+                margin:0 auto;
+            }
+            #quanbu{
+              margin:0 auto;
+              padding-top:50px;
+                width:400px;
+            }
+            h1{
+            text-align:center;
+                color:#666699;
+                text-shadow:5px 5px 5px white;
+                margin-bottom:40px;
+                
+            }
+            ul{
+            list-style:none;
+                padding:0;
+            }
+            .heading{
+            text-indent:50px;
+                background-color:white;
+                box-shadow:2px 2px 2px grey;
+                height:30px;
+                line-height:30px;
+                color:#666699;
+                margin-bottom:20px;
+            }
+            .notSelected{
+            width:20px;
+                vertical-align:middle;
+                margin-right:10px;
+            }
+            .detail1,.detail2{
+                width:300px;
+                height:50px;
+                border-radius:20px;
+                border:2px solid #666699;
+                margin:0 auto;
+                margin-top:10px;
+                padding-top:8px;
+                box-sizing:border-box;
+                padding-left:12px;
+                font-size:20px;
+            }
+            .add1,.add2{
+                width:300px;
+                height:50px;
+                border-radius:20px;
+          
+                 margin-left:50px;
+                margin-top:10px;
+                padding-top:8px;
+                box-sizing:border-box;
+                padding-left:12px;
+                font-size:20px; 
+               
+            }
+            .addButton1,.addButton2{
+                width:80px;
+                height:30px;
+                border-radius:20px;
+                background-color:#666699;
+                color:white;
+                margin-top:10px;
+                margin-left:10px;
+                    
+            }
+            .clear1,.clear2{
+              width:110px;
+                height:30px;
+                border-radius:20px;
+                background-color:#666699;
+                color:white;
+                margin-top:10px;
+                margin-left:200px;  
+            
+            }
+            #guanbi{
+                width:110px;
+                height:30px;
+                background-color:white;
+                color:#666699;
+                border-radius:20px;
+                font-weight:bold;
+                margin-top:30px;
+                    
+            }
+        </style>
+    </head>
+    <body>
+        <div id="quanbu">
+        <h1>周末计划清单</h1>
+        <ul id="big">
+            <li id="sat">
+                <p class="heading">周六</p>
+                <ul class="small">
+                    <li><div class="detail1"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">完成项目制作</div></li>
+                    <li><div class="detail1"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">精听1小时</div></li>
+                    <li><input class="add1" type="text" placeholder="+添加任务"></li>
+                    <li><input type="button" class="clear1" value="删除已有任务"><input class="addButton1" type="button" value="确定添加"></li>
+                 
+                </ul>
+            </li>
+            <li id="sun">
+                <p class="heading">周日</p>
+                <ul class="small">
+                    <li><div class="detail2"><img src="https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200" class="notSelected">完成ppt</div></li>
+                    <li><input class="add2" type="text" placeholder="+添加任务"></li>
+                    <li><input type="button" class="clear2" value="删除已有任务"><input class="addButton2" type="button" value="确定添加"></li>
+                </ul>
+
+            </li>
+        </ul>
+        <input type="button" id="guanbi" value="收起计划列表">
+        </div>
+
+        <script>
+            $(function(){
+                $(".small").hide()
+                
+              $(".heading").on("click",function(){
+                $(this).next().show()
+                  .parent().siblings().children("ul").hide()
+              })
+                function check(){
+                $(".notSelected").on("click",function(){
+                  $(this).attr("src","https://static1.bcjiaoyu.com/70d43381cb948313baa40dabd2e6235c_v.png-200x200")
+                  $(this).parent().css({
+                     "color":"grey",
+                     "text-decoration":"line-through"
+                    })
+                }) }
+                check()
+                $(".addButton1").on("click",function(){
+                   var $value=$(".add1").val()
+                   var $newDiv=$("<div class='detail1'></div>").text($value)
+                   var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+                   $newDiv.prepend($newCircle)
+                   $(".add1").before($newDiv)
+                   $(".add1").val(null)
+                   check()
+                })
+               $(".addButton2").on("click",function(){
+                   var $value=$(".add2").val()
+                   var $newDiv=$("<div class='detail2'></div>").text($value)
+                   var $newCircle=$("<img src='https://static1.bcjiaoyu.com/f6c85f806f731822dd16c38c3dc3dfce_g.png-202x200' class='notSelected'>")
+                   $newDiv.prepend($newCircle)
+                   $(".add2").before($newDiv)
+                   $(".add2").val(null)
+                   check()
+                })  
+                $(".clear1").on("click",function(){
+                  $(".detail1").remove() })
+                
+                $(".clear2").on("click",function(){
+                  $(".detail2").remove() })
+                
+                $("#guanbi").on("click",function(){
+                  $(".small").hide()
+                })
+            })
+        </script>
+    </body>
+
+</html>
