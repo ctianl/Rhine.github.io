@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Campus</title>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <link rel="stylesheet" href="c.css">
+        <script src="c.js"></script>
+        <style>
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+
+#menuBtn{
+    top:10px;
+    left:300px;
+    position: absolute;
+    z-index:10;
+    cursor: pointer;
+}
+#menuBtn img{
+    width:40px;
+}
+#menu{
+    width:300px;
+    height:300px;
+    background:white;
+    opacity: 0.8;
+    position: absolute;
+    top:60px;
+    left:300px;
+    border-radius:20px;
+    box-sizing:border-box;
+    padding-left:30px;
+    padding-top:10px;
+    display:none;
+    z-index:10;
+}
+#menu p{
+    font-size:23px;
+    line-height:70px;
+    color:grey;
+}
+.pictures{
+    height:700px;
+}
+
+.slider,.pictures,.slider-pics img{
+    width:1024px;
+    margin:0 auto;
+    height:700px;
+}
+
+.slider{
+    position: relative;
+    z-index:6;
+}
+.slider-pics{
+    position: absolute;;
+}
+#text{
+    position: absolute;
+    color:white;
+    font-size:30px;
+    text-align:left;
+    top:270px;
+    left:100px;
+}
+#ex{
+    width:150px;
+    height:50px;
+    border:1px solid white;  
+    box-sizing: border-box;
+    padding-left:30px;
+    margin-top:20px;
+    cursor: pointer;
+}
+#ex span{
+    font-size:25px;
+    text-align: center;
+}
+
+.slider-pre{
+    position: absolute;
+    top:50%;
+    width:30px;
+    height:30px;
+    border-left:3px solid white;
+    transform:rotate(315deg);
+    left:10px;
+    border-top:3px solid white;     
+}
+.slider-next{
+    position: absolute;
+    right:0;
+    top:50%;
+    width:30px;
+    height:30px;
+    border-right:3px solid white;
+    transform:rotate(45deg);
+    border-top:3px solid white; 
+    right:10px;
+}
+.slider-pre:hover{
+    border-left:5px solid white;
+    border-top:5px solid white;     
+}
+.slider-next:hover{
+    border-right:5px solid white;
+    border-top:5px solid white;     
+}
+.slider-circle{
+    position:absolute;
+    width:300px;
+    height:30px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-35%);
+    padding-left:100px;
+}
+.slider-item{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:white;
+    border-radius:50%;
+    margin-right:10px;
+    opacity:0.6;
+}
+.slider-item:hover{
+    opacity:1.0;
+}
+.slider-item-selected{
+    opacity:1.0;
+}
+#tuwen{
+    width:1024px;
+    height:850px;
+    margin:0 auto;
+    position: relative;
+}
+#tuwen img{
+    width:400px;
+    position:absolute;
+    top:150px;
+    right:100px;
+    z-index:8;
+}
+#tuwen h2{
+    color:black;
+    font-size:50px;
+    position: absolute;
+    top:110px;
+    right:170px;
+    z-index:10;
+}
+#tuwen p{
+    width:300px;
+    position: absolute;
+    left:100px;
+    top:300px;
+}
+#tuwen span{
+    font-size:23px;
+    font-weight: bold;
+}
+#view{
+    background:white;
+    width:140px;
+    height:40px;
+    border:1px solid black;
+    position:absolute;
+    top:550px;
+    left:100px;
+    z-index:10;
+    cursor: pointer;
+    font-size:16px;
+}
+#finally{
+    max-width:1024px;
+    margin:0 auto;
+    margin-top:-50px;
+    transition:all 1s;
+
+}
+#finally ul{
+    display:flex;
+    margin-left:12px;
+    margin:0 auto;
+}
+#finally li img{
+    width:250px;
+}
+#finally li img:hover{
+    transform:scale(1.2,1.2);
+}
+#contact{
+    width:1024px;
+    height:300px;
+    margin:0 auto;
+    padding-top:150px;
+    box-sizing: border-box;
+}
+#contact p{
+    text-align:center;
+    font-weight: bold;
+}
+#enter{
+    width:400px;
+    height:40px;
+    margin-left:312px;
+    text-align: center;
+    margin-top:20px;
+
+}
+#black{
+    width:100%;
+    height:100px;
+    margin-top:100px;
+    background:black;
+    padding-top:25px;
+}
+#black ul li{
+    display:inline-block;
+    color:white;
+    box-sizing:border-box;
+    width:100px;
+
+
+}
+#black ul{
+    
+    margin-left:50%;
+    transform: translateX(-50%);
+    width:500px;
+    box-sizing: border-box;
+    padding-left:70px;
+}
+
+        </style>
+    </head>
+    <body>
+        <!--菜单栏部分-->
+        <div id="menuBtn"><a href="#"><img src="https://static1.bcjiaoyu.com/32c34402b4f9618616b62844d914c62b_u.png-200x200"></a></div>
+        <div id="menu">
+            <ul>
+                <li><a href="#""><p>University introduction</p></a></li>
+                <li><a href="#""><p>Travel tips</p></a></li>
+                <li><a href="#""><p>View more</p></a></li>
+                <li><a href="#""><p>Help</p></a></li>
+            </ul>
+        </div>
+        <!--轮播图区域-->
+        <div class="slider">
+            <ul class="pictures">
+                <li class="slider-pics"><img src="https://static1.bcjiaoyu.com/f753f86424ea0b324ca45ad303dab1b6_p.-2160x1620"></li>
+                <li class="slider-pics"><img src="https://static1.bcjiaoyu.com/d8d54e1618d0c8811b23a5c34155df7b_r.-2160x1620"></li>
+                <li class="slider-pics"><img src="https://static1.bcjiaoyu.com/7fcacb46a25e0383e50915c55d418b4e_p.-2160x1620"></li>
+                <li class="slider-pics"><img src="https://static1.bcjiaoyu.com/5e42f2fe76f14df20f3af5964f36d292_h.-2160x1620"></li>
+                <li class="slider-pics"><img src="https://static1.bcjiaoyu.com/7709af45b0af2fd3411abc5f15109c44_f.-2160x1620"></li>
+            </ul>
+            <div id="text">
+                <p>Hunan Agricultural University</p>
+                <p>Autumn Campus</p>
+                <div id="ex"><span>explore</span></div>
+            </div>
+            <div class="slider-circle">
+                <li class="slider-item"></li>
+                <li class="slider-item"></li>
+                <li class="slider-item"></li>
+                <li class="slider-item"></li>
+                <li class="slider-item"></li>
+            </div>
+            <div class="slider-button">
+                <a href="#"><div class="slider-pre"></div></a>
+                <a href="#"><div class="slider-next"></div></a>
+            </div>
+        </div>
+
+        <div id="tuwen">
+            <h2>maple leaf</h2>
+            <p><span>This "Red Maple Avenue"</span> is located behind Xiuye Square, close to the north gate of the library. According to reports, these maple trees were introduced from Qingdao in 2010, the scientific name is American red maple, a total of more than 100 trees, planted in the campus "red axis" area, mainly with color tree species.</p>
+            <img src="https://static1.bcjiaoyu.com/827918b76ab998894b2e5243250ba535_s.-1620x2160">
+            <input type="button" id="view" value="view more">
+        </div>
+
+        <div id="finally">
+            <ul>
+                <li><img src="https://static1.bcjiaoyu.com/ae84100081bb23355b08b38993450c48_q.-1620x2160" class="fina-img"></li>
+                <li><img src="https://static1.bcjiaoyu.com/93f08c9dd9b1b0499e413dbeb93a8d0a_d.-1620x2160" class="fina-img"></li>
+                <li><img src="https://static1.bcjiaoyu.com/cde3e35e5e2f9c642924a667ea30ccff_f.-1620x2160" class="fina-img"></li>
+                <li><img src="https://static1.bcjiaoyu.com/8cd33b0b06b84ca90ddd4d1fb0678a6e_t.-1620x2160" class="fina-img"></li>
+            </ul>
+        </div>
+        
+        <div id="contact">
+            <p>GET IN TOUCH WITH US</p>
+            <input type="text" placeholder="ENTER YOUR EMAIL" id="enter">
+        </div>
+        <div id="black">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                    <li>IDEAS</li>
+                </ul>
+        </div>
+        <script>
+            $(function(){
+    $("#menuBtn").on("click",function(){
+        if($("#menuBtn").hasClass("open")){
+            $("#menuBtn").removeClass("open")
+            $("#menu").css("display","none")
+        }
+        else{
+            $("#menuBtn").addClass("open")
+            $("#menu").css({"display":"block","z-index":"10"})
+        }
+    })
+    
+    $(".slider-pics:not(:first)").hide()
+    function play(preIndex,currentIndex){
+        $(".slider-pics").eq(preIndex).fadeOut(500)
+        $(".slider-pics").eq(currentIndex).fadeIn(1000)
+        $(".slider-item").removeClass("slider-item-selected")
+        $(".slider-item").eq(currentIndex).addClass("slider-item-selected")
+    }
+    currentIndex=0
+    length=$(".slider-pics").length
+    function pre(){
+        preIndex=currentIndex
+        currentIndex=(--currentIndex+length)%length
+        play(preIndex,currentIndex)
+    }
+    function next(){
+        preIndex=currentIndex
+        currentIndex=++currentIndex%length
+        play(preIndex,currentIndex)
+    }
+    $(".slider-pre").on("click",function(){
+        pre()
+    })
+    $(".slider-next").on("click",function(){
+        next()
+    })
+
+    interval=false
+    hasStarted=false
+    function start(){
+        if(!hasStarted){
+            hasStarted=true
+            interval=setInterval(next,3000)
+        }
+    }
+    start()
+    function stop(){
+        hasStarted=false
+        clearInterval(interval)
+    }
+
+    $(".slider-button").hide()
+    $(".slider-pics img,.slider-pre,.slider-next").hover(function(){
+        $(".slider-button").show()
+        stop()
+    },function(){
+        $(".slider-button").hide()
+        start()
+    })
+
+    $(".slider-item").hover(function(){
+        stop()
+        preIndex=$(".slider-item-selected").index()
+        currentIndex=$(this).index()
+        play(preIndex,currentIndex)
+    },function(){
+        start()
+    })
+})
+        </script>
+    </body>
+</html>
