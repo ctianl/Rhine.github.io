@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Album Website</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-image:url("https://static1.bcjiaoyu.com/4cde9fa96f43539acf5c3318ac75bef9_g.-800x800");
+            }
+            #box{
+                width:1360px;
+                height:500px;
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform:translate(-50%,-50%);
+            }
+            #nei{
+                position:relative;
+                width:100%;
+                height:100%;
+            }
+            ul{
+                width:1160px;
+                height:190px;
+                margin:0 auto;
+                list-style:none;
+                box-sizing:border-box;
+                display:flex;
+                padding-left:40px;
+            }
+            li{
+                width:330px;
+                height:240px;
+                margin-right:45px;
+                position: relative;
+                z-index:3;
+                background-image:url("https://static1.bcjiaoyu.com/8abd1b798f33ec1e2825cd25fa9a6290_c.-236x169");
+                transition:0.5s;
+                background-size: cover;
+                box-shadow: -15px 15px 15px rgba(0,0,0,0.5);
+            }
+            img{
+                width:272px;
+                height:180px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            li:hover{
+                box-shadow: -50px 50px 50px rgba(0,0,0,0.5);
+            }
+            li:last-child{
+                margin-right:0;
+            }
+            #bookshelf{
+                width:1360px;
+                height:240px;
+                margin:0 auto;
+                z-index:-1;
+                margin-top:-80px;
+                position: relative;
+            }
+            #one{
+                width:1360px;
+                height:200px;
+                margin:0 auto;
+                transform: perspective(600px) rotateX(45deg);
+                transform-origin: bottom;
+                background:#996666;
+                position:absolute;
+            }
+            #two{
+                width:1360px;
+                height:40px;
+                background:#996666;
+                position:absolute;
+                bottom:0%;
+                box-shadow: -15px 20px 20px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="nei">
+            <ul>
+                <li><div class="wrap"><img src="https://static1.bcjiaoyu.com/64810af541b50221efd909b882091ef0_r.-2160x1620" id="album1" onmouseover="onmouse(1)" onmouseout="onmouse(0)"></div></li>
+                <li><div class="wrap"><img src="https://static1.bcjiaoyu.com/fab13f8119cc4201e067b412f9dc7f03_x.-1440x1080" id="album2" onmouseover="onmouse(2)" onmouseout="onmouse(0)"></div></li>
+                <li><div class="wrap"><img src="https://static1.bcjiaoyu.com/318ed410bc56251750006911f487c56f_y.-1440x1080" id="album3" onmouseover="onmouse(3)" onmouseout="onmouse(0)"></div></li>
+            </ul>
+            <div id="bookshelf">
+                <div id="one"></div>
+                <div id="two"></div>
+            </div>
+            </div>
+        </div>
+        <script>
+            var thispic=0
+            var timer
+            var album1=document.getElementById("album1")
+            var album2=document.getElementById("album2")
+            var album3=document.getElementById("album3")
+            var album=new Array(album1,album2,album3)
+            var mypics1=new Array("https://static1.bcjiaoyu.com/64810af541b50221efd909b882091ef0_r.-2160x1620","https://static1.bcjiaoyu.com/031dc2a3a5bf94bad04843e0d2fc2348_d.-2160x1620","https://static1.bcjiaoyu.com/39a72635b7ec1e05749fa4fe9d196a42_v.-2160x1620","https://static1.bcjiaoyu.com/eb248ba633e9d0d69e3188cbf216cd75_d.-2160x1620","https://static1.bcjiaoyu.com/ddb1e3a807c688184b72c6957a6493a8_b.-2160x1620")
+            var mypics2=new Array("https://static1.bcjiaoyu.com/fab13f8119cc4201e067b412f9dc7f03_x.-1440x1080","https://static1.bcjiaoyu.com/82bdddb761bf81fe4e37c3472347100a_p.-1440x1080","https://static1.bcjiaoyu.com/708dc7b30b9d83b4114ce55bf827eba6_b.-1440x1080","https://static1.bcjiaoyu.com/481cf658361177107a5f8a2771c2baa7_q.-1440x1080","https://static1.bcjiaoyu.com/d05d51c30939b16bb5d5bc266b0e9e11_y.-1440x1080")
+            var mypics3=new Array("https://static1.bcjiaoyu.com/318ed410bc56251750006911f487c56f_y.-1440x1080","https://static1.bcjiaoyu.com/bacd6cf0b85d78c791e193c86fc0af8d_q.-1440x1080","https://static1.bcjiaoyu.com/bd1d9c26e6105b556dc0df7f9476597e_r.-1440x1080","https://static1.bcjiaoyu.com/002dc06885617cda2b8b827e41981511_w.-1440x1080")
+            var mypics=new Array(mypics1,mypics2,mypics3)
+            function onmouse(index){
+                if(index){
+                    timer=setInterval(function(){
+                        i=index-1
+                        thispic=++thispic%mypics[i].length
+                        album[i].src=mypics[i][thispic]
+                    },700)
+                }
+                else{
+                    clearInterval(timer)
+                    thispic=0
+                    album[i].src=mypics[i][thispic]
+                }
+            }
+        </script>
+    </body>
+</html>
