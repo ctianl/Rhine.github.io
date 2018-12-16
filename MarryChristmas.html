@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>芬兰圣诞老人村</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="marry.css">
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="marry.js"></script>
+        <style>
+            
+.letter{
+    height:200px;
+}
+#first ul{
+    list-style: none;
+    width:100%;
+    height:350px;
+    display:flex;
+}
+#first ul li{
+    width:32%;
+    margin-right:2%;
+}
+
+.jumbotron{
+    background:none;
+}
+/**不知道这里有没有用**/
+
+#first{
+    width:100%;
+    background-image:url("https://static1.bcjiaoyu.com/62005e04cf1d34d9da2e583863e63d86_x.-1316x972");
+    background-size: cover;
+}
+.first_left{
+    position: relative;
+}
+.first_left_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.first_left_letter h4{
+    color:#CC3366;
+}
+.first_left_img{
+    z-index:1;
+}
+/**这里**/
+
+.first_middle{
+    position: relative;
+}
+.first_middle_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.first_middle_letter h4{
+    color:#CC3366;
+}
+.first_middle_img{
+    z-index:1;
+}
+/**这里**/
+.first_right{
+    position: relative;
+}
+.first_right_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.first_right_letter h4{
+    color:#CC3366;
+}
+.first_right_img{
+    z-index:1;
+}
+/**这里**/
+
+
+/*这里*/
+.second_first{
+    position: relative;
+}
+.second_first_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.second_first_letter h4{
+    color:#CC3366;
+}
+/**/
+.second_second{
+    position: relative;
+}
+.second_second_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.second_second_letter h4{
+    color:#CC3366;
+}
+/**/
+.second_third{
+    position: relative;
+}
+.second_third_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.second_third_letter h4{
+    color:#CC3366;
+}
+/**/
+.second_fourth{
+    position: relative;
+}
+.second_fourth_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.second_fourth_letter h4{
+    color:#CC3366;
+}
+/**/
+.second_fifth{
+    position: relative;
+}
+.second_fifth_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.second_fifth_letter h4{
+    color:#CC3366;
+}
+/**/
+.third_first{
+    position: relative;
+}
+.third_first_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.third_first_letter h4{
+    color:#CC3366;
+}
+/**/
+.third_second{
+    position: relative;
+}
+.third_second_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.third_second_letter h4{
+    color:#CC3366;
+}
+/**/
+.third_third{
+    position: relative;
+}
+.third_third_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.third_third_letter h4{
+    color:#CC3366;
+}
+/**/
+.third_fourth{
+    position: relative;
+}
+.third_fourth_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.third_fourth_letter h4{
+    color:#CC3366;
+}
+/**/
+.third_fifth{
+    position: relative;
+}
+.third_fifth_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.third_fifth_letter h4{
+    color:#CC3366;
+}
+/**/
+.third_sixth{
+    position: relative;
+}
+.third_sixth_letter{
+    position: absolute;
+    top:30px;
+    margin:30px;
+    display: none;
+}
+.third_sixth_letter h4{
+    color:#CC3366;
+}
+/**/
+
+.wrap{
+    width:100%;
+    height:750px;
+    position: relative;
+}
+
+.wrap-big{
+    width: 1024px;
+    height:100%;
+    position: absolute;
+    margin:0 auto;
+    box-sizing:border-box;
+}
+.wrap-small{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.big{
+    position: absolute;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    margin:0 auto;
+    top:25px;
+}
+
+.here{
+    position: relative;
+}
+.last{
+    width:700px;
+    height:700px;
+    position: absolute;
+    top:0px;
+  
+    left:0px;
+    box-shadow: 25px 25px 50px rgba(0,0,0,0.2);
+    transition:0.5s;
+}
+.last:hover{
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+}
+
+.circle{
+    position: absolute;
+    top:40%;
+    right:50px;
+
+    width:20px;
+    height:100px;
+}
+.item{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background:#CC3366;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    transition:0.5s;
+}
+.item:hover{
+    opacity: 0.8;
+    transform:scale(1.2,1.2);
+}
+.zuihou{
+    position: absolute;
+    bottom:50px;
+    right:0px;
+
+    display:flex;
+}
+#fourth a{
+    display: block;
+    width:100px;
+    height:100px;
+    margin-right:10px;
+    padding:5px;
+    box-sizing: border-box;
+}
+.zuihou img{
+    width:90px;
+    height:90px;
+    margin-top:5px;
+}
+.zhengfangxing{
+    width:50px;
+    height:50px;
+    border-left:5px solid white;
+    border-top:5px solid white;
+    transform:rotate(-45deg);
+    margin-top:18px;
+    margin-left:40px;
+    transition:0.5s;
+}
+.zhengfangxing:hover{
+    border-left:8px solid white;
+    border-top:8px solid white;
+}
+.selected{
+    background:#993366;
+    opacity:1.0;
+    transform:scale(1.2,1.2);
+
+}
+
+#second,#third,#fourth{
+    display:none;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+.ding1{
+    position: relative;
+}
+.duiding1{
+    position: absolute;
+    top:0px;
+}
+.ding2{
+    position: relative;
+}
+.duiding2{
+    position: absolute;
+    top:0px;
+}
+.ding3{
+    position: relative;
+}
+.duiding3{
+    position: absolute;
+    top:0px;
+}
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrap"><!--宽度与网页一致-->
+                <nav role="navigation" class="navbar navbar-fixed-top navbar-inverse">
+                        <div class="navbar-header navbar-brand">
+                            <a href="#"><img src="https://static1.bcjiaoyu.com/aef23f9e0db1e18072f3e5dcfc5cbf01_k.-594x755" style="width:20px;height:20px;margin-top:-5px;margin-right:15px;transform:rotate(-15deg);">Santa Claus's Village</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                </nav>
+                <div class="jumbotron">
+                        <div class="wrap-big"><!--宽度是1024px，是wrap的子元素-->
+                            <div class="wrap-small"><!--宽度是1024px，是big的父元素-->
+
+                                <!--第一张-->
+                                <div class="big" id="first">
+                                    <div class="row letter">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="jumbotron">
+                                                <h1 style="color:#FF9999;font-family:YouYuan">芬兰圣诞老人村</h1>
+                                                <h2 style="text-indent:3em;color:#FFCC66;font-family: STSong">——在童话之镇，近距离感受圣诞</h2>
+                                                <p class="text-center" style="font-size:17px;margin-top:40px;">在满世界都是弥漫着温馨圣诞氛围时，你可知道，位于芬兰的拉普兰地区，有一个圣诞老人村<br>
+                                                    （Santa Claus Village），拥有着世界上最醇正的圣诞氛围。这个唯一被联合国认可的圣诞老人<br>
+                                                    村，每年会有来自世界各地的游客源源不断的涌向这里，一睹圣诞老人的风采。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <ul class="first_array">
+                                            <li>
+                                                <div class="first_left">
+                                                        <img src="https://static1.bcjiaoyu.com/2aad3a64c4aca82bebff9abff45a3a7c_x.-394x390" class="img-responsive first_left_img">
+                                                        <div class="first_left_letter">
+                                                            <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">梦幻景致</h4>
+                                                            <p style="line-height:2em;font-size:15px;">闻名世界的圣诞老人村就位于罗瓦涅米以北8公里市郊边缘处的北极圈上，自成一隅。皑皑的白雪，温暖的烛光，飞天驯鹿雪橇，悦耳叮当……这个坐落在北极圈上的小村庄，被浓浓的圣诞气息笼罩着。</p>
+                                                        </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="first_middle">
+                                                        <img src="https://static1.bcjiaoyu.com/3c5b8c9c9a795cca811d3c10774bd734_o.-777x776" class="first_middle_img img-responsive">
+                                                        <div class="first_middle_letter">
+                                                            <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">由来</h4>
+                                                            <p style="line-height:2em;font-size:15px;">1995年圣诞节前夕，当时的联合国秘书长加利将一封发给圣诞老人的节日贺卡寄往芬兰北部拉毕省的省会罗瓦涅米，这才使争论停止。因为加利的贺卡起到了一种盖棺定论的作用——联合国承认圣诞老人的故乡是罗瓦涅米。</p>
+                                                        </div>       
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="first_right">
+                                                    <img src="https://static1.bcjiaoyu.com/ee81ce26bcdefd94e332e2b018b21228_r.-394x392" class="first_right_img img-responsive">
+                                                    <div class="first_right_letter">
+                                                            <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">圣诞美食</h4>
+                                                        <p style="line-height:2em;font-size:15px;">圣诞老人村除了具有童话色彩的景致，还有令你垂涎三尺的美食哦，吃上一顿温馨美味的圣诞晚餐是不可或缺的哦~</p>
+                                                    </div>  
+                                                </div>
+                                            </li>
+                                    </ul>
+                                    
+        
+                                </div>
+                                <!--第二张-->
+                                <div class="big" id="second">
+                                    <div class="row">
+                                  
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <div class="second_first">
+                                                <img src="https://static1.bcjiaoyu.com/9ad6b0833f4a5412eff739322a0a244b_d.-393x524" class="img-responsive second_array second_first_img" style="margin-top:10px;">
+                                                <div class="second_first_letter">
+                                                        <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">鹿园</h4>
+                                                        <p style="line-height:2em;font-size:15px;">圣诞老人村的鹿园里面有许多美丽的驯鹿，夏天，它们懒洋洋地躺在草坪上养生；
+                                                            到了冬天，特别是圣诞节时，它们为圣诞老人及游客努力工作，拖着鹿车在雪地上飞驰，
+                                                            让游客享受雪花扑面的快感，感受圣诞的快乐与温馨，使圣诞卡上的情景变成现实。</p>
+                                                </div>
+                                            </div>
+                                            <div class="second_second">
+                                                    <img src="https://static1.bcjiaoyu.com/e801e4f09f36c46f7f8a4f4ed219cd9c_g.-389x323" class="img-responsive second_array second_second_img" style="margin-top:10px;">
+                                                    <div class="second_second_letter">
+                                                            <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">北极圈分界线</h4>
+                                                            <p style="line-height:2em;font-size:15px;">圣诞老人村另外一个名胜便是刻上北纬66度33分字样的北极圈分界线。
+                                                                因为到达北极的意义十分特别,游客都乐于跨着北极圈标志拍照留念,并得到一张跨越北极圈的证书——“北极圈纬线地标纪念证书”。</p>
+                                                    </div>
+                                            </div>          
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-8">
+                                            <div class="second_third">
+                                                    <img src="https://static1.bcjiaoyu.com/6cd596399e49311f5b1b4ea835c9a667_q.-795x392" class="img-responsive second_array second_third_img" style="margin-top:10px;">
+                                                    <div class="second_third_letter">
+                                                            <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">圣诞老人办公室</h4>
+                                                            <p style="line-height:2em;font-size:15px;">在圣诞老人办公室游客可以和圣诞老人（Santa Claus）面对面交谈、合影，
+                                                                还可以深入圣诞老人的秘密工作室，目睹大批小精灵如何忙碌地替各地儿童准备圣诞礼物，甚至收到精美的礼物。</p>
+                                                    </div>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <div class="second_fourth">
+                                                            <img src="https://static1.bcjiaoyu.com/4dafdf0d2b67a3fd7af57b999987d289_f.-404x457" class="img-responsive second_array second_fourth_img" style="margin-top:10px;">
+                                                            <div class="second_fourth_letter">
+                                                                    <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">圣诞乐园</h4>
+                                                                    <p style="line-height:2em;font-size:15px;">圣诞乐园位于圣诞老人村附近，是由山岩挖建而成的主题公园，利用梦幻游乐设施带您畅游圣诞乐园。乘搭它的魔术列车，
+                                                                        入场者可直闯拉普兰梦幻世界，除了欣赏到那里的四季变化，乐园里还有多种游乐设施：
+                                                                        如红鼻子过山车、圣诞旋转木马等给童心未泯的大人和小孩玩儿个痛快。</p>
+                                                            </div>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <div class="second_fifth">
+                                                            <img src="https://static1.bcjiaoyu.com/b751b5d14fc342051a2fe75679df47f6_l.-393x459" class="img-responsive second_array second_fifth_img" style="margin-top:10px;">
+                                                            <div class="second_fifth_letter">
+                                                                    <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">纪念品商店</h4>
+                                                                    <p style="line-height:2em;font-size:15px;">在圣诞老人村的礼品店里，您可以买到带有芬兰特点、设计精美的礼品。购买一整张驯鹿皮或驯鹿皮工艺品，会非常有纪念意义哦。</p>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--第三张-->
+                                <div class="big" id="third">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <div class="third_first">
+                                                <img src="https://static1.bcjiaoyu.com/2e7d313018b6231a69633c9a897fc728_c.-400x542" class="img-responsive second_array third_first_img" style="margin-top:10px;">
+                                                <div class="third_first_letter">
+                                                        <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">姜饼</h4>
+                                                    <p style="line-height:2em;font-size:15px;">姜饼（Lebkuchen），是一种介乎于蛋糕与饼干之间的小点。传统的姜饼，
+                                                        以蜂蜜、胡椒粒为材料，又甜又辣，口感刺激。姜饼经过改良，外面洒上一层糖霜，不但口感丰富，外型也相当讨好。</p>
+                                                </div>
+                                            </div>
+                                            <div class="third_second">
+                                                    <img src="https://static1.bcjiaoyu.com/ae7a4ee1fc4c583ba820b11af761736c_n.-405x307" class="img-responsive second_array third_second_img" style="margin-top:10px;">
+                                                    <div class="third_second_letter">
+                                                            <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">李子酱馅饼</h4>
+                                                        <p style="line-height:2em;font-size:15px;">酸酸甜甜的果酱馅饼，十分可口。</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <div class="third_third">
+                                                <img src="https://static1.bcjiaoyu.com/7ebc8a0a066ec613dbd8c4c99cc63388_a.-402x395" class="img-responsive second_array third_third_img" style="margin-top:10px;">
+                                                <div class="third_third_letter">
+                                                        <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">驯鹿肉</h4>
+                                                    <p style="line-height:2em;font-size:15px;">驯鹿肉是芬兰的特色美食，不光好吃，还营养价值特别高，比如维生素B12，omega-3, 
+                                                        omega-6……在芬兰，你可以吃到打猎打到的野生驯鹿大餐，或者你也可以尝尝驯鹿汉堡。</p>
+                                                </div>
+                                            </div>
+                                            <div class="third_fourth">
+                                                <img src="https://static1.bcjiaoyu.com/39f063a9dcaa89019ae98dc0fc5e9118_x.-400x445" class="img-responsive second_array third_fourth_img" style="margin-top:10px;">
+                                                <div class="third_fourth_letter">
+                                                        <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">Glogi</h4>
+                                                    <p style="line-height:2em;font-size:15px;">圣诞老人村传统的饮料，它是一种掺入杏仁与葡萄干的酒，味道既辣且香。
+                                                        芬兰人会一边享用姜饼，一边喝glogi酒。</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                             <div class="third_fifth">
+                                                <img src="https://static1.bcjiaoyu.com/fea0656ada876f88135d9f305cd3ed9f_j.-406x542" class="img-responsive second_array third_fifth_img" style="margin-top:10px;">
+                                                <div class="third_fifth_letter">
+                                                        <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">柠檬烤鸡</h4>
+                                                    <p style="line-height:2em;font-size:15px;">整只鸡是用新鲜柠檬和辣粉撒在外面，切半的柠檬塞在鸡里面慢慢烤出来的。这个菜谱很容易做，而且鸡肉做出来总是很汁多肉嫩。</p>
+                                                </div>
+                                            </div>
+                                            <div class="third_sixth">
+                                                <img src="https://static1.bcjiaoyu.com/17711e0346e23a810da7d1164ea0fd6e_d.-399x311" class="img-responsive second_array third_sixth_img" style="margin-top:10px;">
+                                                <div class="third_sixth_letter">
+                                                        <h4><img src="https://static1.bcjiaoyu.com/669007d4b59832577537deabff157d64_u.-469x765" style="width:15px;margin-top:-5px;margin-right:5px;">圣诞火腿</h4>
+                                                    <p style="line-height:2em;font-size:15px;">火腿应该算是圣诞大餐中最传统的正菜了，烟熏烤火腿往往会在表面涂抹上含有甜味的酱汁，
+                                                        如蜂蜜或者樱桃石榴酱。利用这些甜味酱可以与红酒成为搭配熏火腿食用的完美组合。</p>
+                                                </div>
+                                            </div>                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--第四张-->
+                                <div class="big" id="fourth">
+                                    <div class="row">
+                                        <div class="col-md-8  col-md-offset-1 here">
+                                                <img src="https://static1.bcjiaoyu.com/0eef2075dfa6d4d4448fa4c52c37ec42_y.-1010x973" class="Zero_show fourth_first last">
+                                                <img src="https://static1.bcjiaoyu.com/5b5978a82814fd0f957aa6e7390f1b66_e.-1010x973" class="One_show fourth_second last">
+                                                <img src="https://static1.bcjiaoyu.com/1b7779badea8d1926b0857d8841555de_b.-1010x973" class="Two_show fourth_third last">
+                                                <img src="https://static1.bcjiaoyu.com/9ddcf94818a2e8a074789127739e648a_b.-1010x973" class="Three_show fourth_fourth last">
+                                                <img src="https://static1.bcjiaoyu.com/5a3d0ea0afe87d608abed2f283f11857_p.-1010x973" class="Four_show fourth_fourth last">
+
+                                        </div>
+                                    </div>
+                                    <div class="zuihou">
+                                        <a href="#"><div class="zhengfangxing" id="zheng"></div></a>
+                                        <!--第一个框-->
+                                        <a href="#" class="thumbnail ding1" ><img src="https://static1.bcjiaoyu.com/0eef2075dfa6d4d4448fa4c52c37ec42_y.-1010x973" id="diyige" class="Zero duiding1 fourth_first ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/5b5978a82814fd0f957aa6e7390f1b66_e.-1010x973" class="One duiding1 fourth_first ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/1b7779badea8d1926b0857d8841555de_b.-1010x973" class="Two duiding1 fourth_first ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/9ddcf94818a2e8a074789127739e648a_b.-1010x973" class="Three duiding1 fourth_first ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/5a3d0ea0afe87d608abed2f283f11857_p.-1010x973" class="Four duiding1 fourth_first ya img-responsive center-block">
+                                            
+                                        </a>
+                                        <!--第二个框-->
+                                        <a href="#" class="thumbnail"><img src="https://static1.bcjiaoyu.com/5b5978a82814fd0f957aa6e7390f1b66_e.-1010x973" id="dierge" class="One duiding2 fourth_second ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/1b7779badea8d1926b0857d8841555de_b.-1010x973" class="Two duiding2 fourth_second ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/9ddcf94818a2e8a074789127739e648a_b.-1010x973" class="Three duiding2 fourth_second ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/5a3d0ea0afe87d608abed2f283f11857_p.-1010x973" class="Four duiding2 fourth_second ya img-responsive center-block">  
+                                            <img src="https://static1.bcjiaoyu.com/0eef2075dfa6d4d4448fa4c52c37ec42_y.-1010x973" class="Zero duiding2 fourth_second ya img-responsive center-block">                                       
+                                        </a>
+                                        <!--第三个框-->
+                                        <a href="#" class="thumbnail"><img src="https://static1.bcjiaoyu.com/1b7779badea8d1926b0857d8841555de_b.-1010x973" id="disange" class="Two duiding3 fourth_third ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/9ddcf94818a2e8a074789127739e648a_b.-1010x973" class="Three duiding3 fourth_third ya img-responsive center-block">
+                                            <img src="https://static1.bcjiaoyu.com/5a3d0ea0afe87d608abed2f283f11857_p.-1010x973" class="Four duiding3 fourth_third ya img-responsive center-block">  
+                                            <img src="https://static1.bcjiaoyu.com/0eef2075dfa6d4d4448fa4c52c37ec42_y.-1010x973" class="Zero duiding3 fourth_third ya img-responsive center-block"> 
+                                            <img src="https://static1.bcjiaoyu.com/5b5978a82814fd0f957aa6e7390f1b66_e.-1010x973" class="One duiding3 fourth_third ya img-responsive center-block"> 
+                                        </a>                               
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="circle">
+                        <ul>
+                            <li class="item"></li>
+                            <li class="item"></li>
+                            <li class="item"></li>
+                            <li class="item"></li>      
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            $(function(){
+
+
+
+function play(preIndex,currentIndex){
+    $(".big").eq(preIndex).hide()
+    $(".big").eq(currentIndex).show()   
+    $(".item").eq(preIndex).removeClass("selected")
+    $(".item").eq(currentIndex).addClass("selected")
+}
+var currentIndex=0
+$(".item").hover(function(){
+    preIndex=currentIndex
+    currentIndex=$(this).index()
+    play(preIndex,currentIndex)
+},function(){})
+
+
+
+
+$(".first_left").hover(function(){
+    $(".first_left_img").css("opacity","0.2")
+    $(".first_left_letter").css("display","block")
+},function(){
+    $(".first_left_img").css("opacity","1.0")
+    $(".first_left_letter").css("display","none")
+})
+
+$(".first_middle").hover(function(){
+    $(".first_middle_img").css("opacity","0.2")
+    $(".first_middle_letter").css("display","block")
+},function(){
+    $(".first_middle_img").css("opacity","1.0")
+    $(".first_middle_letter").css("display","none")
+})
+
+$(".first_right").hover(function(){
+    $(".first_right_img").css("opacity","0.2")
+    $(".first_right_letter").css("display","block")
+},function(){
+    $(".first_right_img").css("opacity","1.0")
+    $(".first_right_letter").css("display","none")
+})
+
+$(".second_first").hover(function(){
+    $(".second_first_img").css("opacity","0.2")
+    $(".second_first_letter").css("display","block")
+},function(){
+    $(".second_first_img").css("opacity","1.0")
+    $(".second_first_letter").css("display","none")
+})
+
+$(".second_second").hover(function(){
+    $(".second_second_img").css("opacity","0.2")
+    $(".second_second_letter").css("display","block")
+},function(){
+    $(".second_second_img").css("opacity","1.0")
+    $(".second_second_letter").css("display","none")
+})
+
+$(".second_third").hover(function(){
+    $(".second_third_img").css("opacity","0.2")
+    $(".second_third_letter").css("display","block")
+},function(){
+    $(".second_third_img").css("opacity","1.0")
+    $(".second_third_letter").css("display","none")
+})
+
+$(".second_fourth").hover(function(){
+    $(".second_fourth_img").css("opacity","0.2")
+    $(".second_fourth_letter").css("display","block")
+},function(){
+    $(".second_fourth_img").css("opacity","1.0")
+    $(".second_fourth_letter").css("display","none")
+})
+
+$(".second_fifth").hover(function(){
+    $(".second_fifth_img").css("opacity","0.2")
+    $(".second_fifth_letter").css("display","block")
+},function(){
+    $(".second_fifth_img").css("opacity","1.0")
+    $(".second_fifth_letter").css("display","none")
+})
+
+$(".third_first").hover(function(){
+    $(".third_first_img").css("opacity","0.2")
+    $(".third_first_letter").css("display","block")
+},function(){
+    $(".third_first_img").css("opacity","1.0")
+    $(".third_first_letter").css("display","none")
+})
+
+$(".third_second").hover(function(){
+    $(".third_second_img").css("opacity","0.2")
+    $(".third_second_letter").css("display","block")
+},function(){
+    $(".third_second_img").css("opacity","1.0")
+    $(".third_second_letter").css("display","none")
+})
+
+$(".third_third").hover(function(){
+    $(".third_third_img").css("opacity","0.2")
+    $(".third_third_letter").css("display","block")
+},function(){
+    $(".third_third_img").css("opacity","1.0")
+    $(".third_third_letter").css("display","none")
+})
+
+$(".third_fourth").hover(function(){
+    $(".third_fourth_img").css("opacity","0.2")
+    $(".third_fourth_letter").css("display","block")
+},function(){
+    $(".third_fourth_img").css("opacity","1.0")
+    $(".third_fourth_letter").css("display","none")
+})
+
+$(".third_fifth").hover(function(){
+    $(".third_fifth_img").css("opacity","0.2")
+    $(".third_fifth_letter").css("display","block")
+},function(){
+    $(".third_fifth_img").css("opacity","1.0")
+    $(".third_fifth_letter").css("display","none")
+})
+
+$(".third_sixth").hover(function(){
+    $(".third_sixth_img").css("opacity","0.2")
+    $(".third_sixth_letter").css("display","block")
+},function(){
+    $(".third_sixth_img").css("opacity","1.0")
+    $(".third_sixth_letter").css("display","none")
+})
+
+var shuzi=0
+var yuan
+
+$("#zheng").on("click",function(){
+    yuan=shuzi
+    shuzi=(--shuzi+5)%5
+    $(".duiding1").eq(shuzi).show()
+    $(".duiding1").eq(yuan).hide()
+    $(".duiding2").eq(shuzi).show()
+    $(".duiding2").eq(yuan).hide()
+    $(".duiding3").eq(shuzi).show()
+    $(".duiding3").eq(yuan).hide()
+    $(".last").eq(shuzi).show()
+    $(".last").eq(yuan).hide()
+
+})
+
+$(".One").on("click",function(){
+        $(".One_show").show()
+        $(".last").not(".One_show").hide()
+    })
+    $(".Zero").on("click",function(){
+        $(".Zero_show").show()
+        $(".last").not(".Zero_show").hide()
+    })
+    $(".Two").on("click",function(){
+        $(".Two_show").show()
+        $(".last").not(".Two_show").hide()
+    })
+    $(".Three").on("click",function(){
+        $(".Three_show").show()
+        $(".last").not(".Three_show").hide()
+    })
+    $(".Four").on("click",function(){
+        $(".Four_show").show()
+        $(".last").not(".Four_show").hide()
+    })
+})
+        </script>
+    </body>
+</html>
