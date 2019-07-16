@@ -226,62 +226,62 @@ $(function () {
                 message: '用户名无效',
                 validators: {
                     notEmpty: {
-                        message: '用户名不能为空'
+                        message: 'User name cannot be empty'
                     },
                     stringLength: {
                         min: 6,
                         max: 30,
-                        message: '用户名必须大于6，小于30个字'
+                        message: 'User name must be greater than 6, less than 30 words'
                     },
                     regexp: {
                         regexp: /^[a-zA-Z0-9_\.]+$/,
-                        message: '用户名只能由字母、数字、点和下划线组成'
+                        message: 'User names can only be composed of letters, numbers, points and underscores'
                     },
                     remote: {
                         url: '#',
-                        message: '用户名不可用'
+                        message: 'Username unavailable'
                     },
                     different: {
                         field: 'password',
-                        message: '用户名和密码不能相同'
+                        message: 'User name and password cannot be the same'
                     }
                 }
             },
             email: {
                 validators: {
                     emailAddress: {
-                        message: '请输入有效的电子邮件地址'
+                        message: 'Please enter a valid email address'
                     },
                     notEmpty: {
-                        message: '邮箱不能为空'
+                        message: 'Mailbox cannot be empty'
                     },
                 }
             },
             phone: {
                 validators: {
                     notEmpty: {
-                        message: '手机号码不能为空'
+                        message: 'Mobile phone number cannot be empty'
                     },
                     stringLength: {
                         min: 11,
                         max: 11,
-                        message: '手机号码必须为11位数'
+                        message: 'Mobile phone number must be 11 digits'
                     },
                     regexp: {
                         regexp: /^[0-9\.]+$/,
-                        message: '手机号码只能由数字组成'
+                        message: 'Mobile phone numbers can only be made up of numbers.'
                     },
                 }
             },
             comment: {
                 validators: {
                     notEmpty: {
-                        message: '请输入信息'
+                        message: 'Please enter information'
                     },
                     stringLength: {
                         min: 10,
 
-                        message: '输入的内容至少10字符以上'
+                        message: 'Enter at least 10 characters or more'
                     },
 
                 }
