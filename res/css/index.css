@@ -1,0 +1,154 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.owl-carousel {
+    z-index: -1;
+}
+
+.aniFirst {
+    transform: translateY(-60px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.aniSecond {
+    transform: translateY(100px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.own-item {
+    padding-left: 5%;
+    z-index: -1;
+}
+
+.yinFanren {
+    z-index: -1;
+}
+
+.owl-item img {
+    width: 90%;
+    z-index: -1;
+}
+
+.other {
+    position: fixed;
+    top: 0;
+}
+
+.small {
+    width: 100%;
+    height: 100%;
+    /* height: 100%;
+    object-fit: contain; */
+    transition: 1.2s;
+}
+
+.small:hover {
+    transform: scale(1.2, 1.2) rotate(10deg);
+}
+
+.shijue {
+    margin: 0px;
+    background-image: url("https://images.unsplash.com/photo-1561588012-17a0e1119c0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 100px;
+}
+
+.secondShijue {
+    padding-top: 150px;
+    background-image: url("https://images.unsplash.com/photo-1569614078353-2bf54d3acc0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1068&q=80");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 150px;
+}
+
+.subBtn {
+    background: #7ec3bb;
+    color: white;
+}
+
+.subBtn:hover {
+    background: #45a89d;
+}
+
+.thisNav {
+    height: 90px;
+    background: rgba(250, 250, 250, 1);
+    position: relative;
+    top: -90px;
+    z-index: 999;
+}
+
+#navbarTogglerDemo01 {
+    transform: translateX(-16px);
+    margin-right: -32px;
+}
+
+
+.navbar-toggler-icon {
+    color: orangered;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+.menuP {
+    transform: translateY(50px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.aniUl li {
+    position: relative;
+    top: 60px;
+    opacity: 0;
+}
+
+.inputUl .inputLi {
+    position: relative;
+    top: 60px;
+    opacity: 0;
+}
+
+.secondMore {
+    transform: scale(0, 0);
+    transition: 0.5s;
+}
+.buttonChange{
+     transform: scale(0, 0);
+    transition: 0.5s;
+}
+.casual {
+    transform: translateY(100px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.hcontact {
+    transform: translateY(50px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.signUp {
+    transform: translateX(-50px);
+    transition: 0.5s;
+    opacity: 0
+}
+.aniLeft{
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+.fan{
+   position: relative;
+   top:100px;
+   opacity: 0;
+}
