@@ -1,2 +1,3 @@
-//我怎么就不行了草泥马
-export default ()=>{console.log("new function")}
+let a=100
+let b="t.js"
+export {a,b}
