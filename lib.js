@@ -1,2 +1,1 @@
-//我怎么就不行了草泥马
-export default ()=>{console.log("new function")}
+export * from "https://ctianl.github.io/Rhine.github.io/t.js"

@@ -1,1 +1,3 @@
-export let fn = () => { console.log("Hello,baby!") }
+let a=100
+let b="t.js"
+export {a,b}
