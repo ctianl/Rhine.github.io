@@ -1,6 +1,6 @@
-callback(JSON.stringify({
-    name:"ctianl",
-    age:22,
-    city:"Changsha"
-}))
-//？？？
+var jsonObj={
+    "name":"ctianl",
+    "number":21,
+    "group":4
+}
+callback("http://my.sina.com.cn/",JSON.stringify(jsonObj))
