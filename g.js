@@ -10,4 +10,3 @@ let obj={
     }
     
 }
-callback(JSON.stringify(obj))
