@@ -6,7 +6,7 @@
         publishtime: "2017-2-27",
         changetime: "2017-3-10",
         user: "admin",
-        state: "上线"
+        state: "上线",
     },
     {
         id: "2",
