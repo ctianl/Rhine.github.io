@@ -1,6 +1,6 @@
-# thisone
+# vue后台管理系统
 
-> A Vue.js project
+> vue+vuex+axios+vue-router+mock
 
 ## Build Setup
 
