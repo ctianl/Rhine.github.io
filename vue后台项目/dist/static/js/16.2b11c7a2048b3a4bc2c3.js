@@ -1,2 +1,0 @@
-webpackJsonp([16],{vsXr:function(e,t){},wJd0:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("router-view")],1)},staticRenderFns:[]};var a=r("VU/8")({name:"Drag"},n,!1,function(e){r("vsXr")},"data-v-24b8869a",null);t.default=a.exports}});
-//# sourceMappingURL=16.2b11c7a2048b3a4bc2c3.js.map
