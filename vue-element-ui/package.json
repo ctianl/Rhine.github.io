@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tinymce/tinymce-vue": "^3.0.1",
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "axios": "^0.19.1",
     "codemirror": "^5.50.2",
     "default-passive-events": "^1.0.10",
